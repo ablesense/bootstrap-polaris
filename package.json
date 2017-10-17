@@ -1,0 +1,16 @@
+{
+  "name": "bootstrap-polaris",
+  "version": "0.0.1",
+  "settings": {
+    "sass_source": "./scss/bootstrap.scss",
+    "sass_watch_loc": "./scss/**/*.scss",
+    "css_dest": "./dist/",
+    "css_name": "bootstrap-polaris.min.css"
+  },
+  "devDependencies": {
+    "gulp": ">=3.9.1",
+    "gulp-autoprefixer": ">=3.1.1",
+    "gulp-concat": ">=2.0",
+    "gulp-sass": ">=2.0"
+  }
+}
