@@ -307,8 +307,8 @@ $grid-gutter-height: 2rem !default;
 //
 // Define common padding and border radius sizes and more.
 
-$line-height-lg:         1.5 !default;
-$line-height-sm:         1.5 !default;
+$line-height-lg:         1.6 !default;
+$line-height-sm:         1.6 !default;
 
 $border-width: 1px !default;
 
@@ -338,8 +338,8 @@ $font-size-base: 1.6rem !default; // Assumes the browser default, typically `16p
 $font-size-lg:   1.4rem !default;
 $font-size-sm:   .875rem !default;
 
-$font-weight-normal: normal !default;
-$font-weight-bold: bold !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 600 !default;
 
 $font-weight-base: $font-weight-normal !default;
 $line-height-base: 1.6 !default;
@@ -368,7 +368,7 @@ $display3-weight:     300 !default;
 $display4-weight:     300 !default;
 $display-line-height: $headings-line-height !default;
 
-$lead-font-size:   1.5rem !default;
+$lead-font-size:   1.6rem !default;
 $lead-font-weight: 300 !default;
 
 $small-font-size: 80% !default;
@@ -390,7 +390,7 @@ $nested-kbd-font-weight: $font-weight-bold !default;
 
 $list-inline-padding: 5px !default;
 
-$mark-bg: #fcf8e3 !default;
+$mark-bg: $gray-100 !default;
 
 
 // Tables
@@ -424,20 +424,21 @@ $table-inverse-color:           $body-bg !default;
 
 $input-btn-padding-y:       0.7rem !default;
 $input-btn-padding-x:       1.6rem !default;
-$input-btn-line-height:     1.5 !default;
+$input-btn-line-height:     1 !default;
 
 $input-btn-padding-y-sm:    0.7rem !default;
 $input-btn-padding-x-sm:    1.6rem !default;
-$input-btn-line-height-sm:  1.5 !default;
+$input-btn-line-height-sm:  1 !default;
 
 $input-btn-padding-y-lg:    1.1rem !default;
 $input-btn-padding-x-lg:    2.4rem !default;
-$input-btn-line-height-lg:  2 !default;
+$input-btn-line-height-lg:  1 !default;
 
 $btn-font-weight:                $font-weight-normal !default;
 $btn-box-shadow:                 0 1px 0 0 rgba($gray-900,0.05) !default;
 $btn-focus-box-shadow:           0 0 0 1px $indigo !default;
 $btn-active-box-shadow:          0 0 0 0 transparent,inset 0 1px 1px 0 rgba($gray-900,0.1),inset 0 1px 4px 0 rgba($gray-900,0.2) !default;
+$btn-height:                      3.6rem !default;
 
 $btn-link-disabled-color:        $gray-600 !default;
 

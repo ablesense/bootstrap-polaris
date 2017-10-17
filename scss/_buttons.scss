@@ -6,12 +6,17 @@
 
 .btn {
   display: inline-block;
+  min-height: $btn-height;
+  min-width: $btn-height;
   font-weight: $btn-font-weight;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
   user-select: none;
-  border: $input-btn-border-width solid transparent;
+  cursor: pointer;
+  border: 1px solid $gray-400;
+  @include button-variant($gray-100, $gray-400);
+  // border: $input-btn-border-width solid transparent;
   @include button-size($input-btn-padding-y, $input-btn-padding-x, $font-size-base, $input-btn-line-height, $btn-border-radius);
   @include transition($btn-transition);
 
@@ -22,12 +27,12 @@
   &:focus,
   &.focus {
     outline: 0;
-    box-shadow: $btn-focus-box-shadow;
   }
 
   // Disabled comes first so active can properly restyle
   &.disabled,
   &:disabled {
+    cursor: default;
     opacity: .65;
     @include box-shadow(none);
   }
@@ -58,7 +63,7 @@ fieldset[disabled] a.btn {
 
 @each $color, $value in $theme-colors {
   .btn-outline-#{$color} {
-    @include button-outline-variant($value, #fff);
+    @include button-outline-variant($value);
   }
 }
 
@@ -72,6 +77,7 @@ fieldset[disabled] a.btn {
   font-weight: $font-weight-normal;
   color: $link-color;
   border-radius: 0;
+  background: transparent;
 
   &,
   &:active,
@@ -83,11 +89,13 @@ fieldset[disabled] a.btn {
   &,
   &:focus,
   &:active {
+    background: transparent;
     border-color: transparent;
     box-shadow: none;
   }
   @include hover {
     border-color: transparent;
+    background: none;
   }
   @include hover-focus {
     color: $link-hover-color;
