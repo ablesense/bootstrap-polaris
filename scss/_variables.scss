@@ -335,8 +335,8 @@ $font-family-monospace:  Monaco, Consolas, 'Lucida Console', monospace !default;
 $font-family-base:       $font-family-sans-serif !default;
 
 $font-size-base: 1.6rem !default; // Assumes the browser default, typically `16px`
-$font-size-lg:   1.4rem !default;
-$font-size-sm:   .875rem !default;
+$font-size-lg:   1.7rem !default;
+$font-size-sm:   1.4rem !default;
 
 $font-weight-normal: 400 !default;
 $font-weight-bold: 600 !default;
@@ -424,11 +424,11 @@ $table-inverse-color:           $body-bg !default;
 
 $input-btn-padding-y:       0.7rem !default;
 $input-btn-padding-x:       1.6rem !default;
-$input-btn-line-height:     1 !default;
+$input-btn-line-height:     1.6 !default;
 
-$input-btn-padding-y-sm:    0.7rem !default;
+$input-btn-padding-y-sm:    0.4rem !default;
 $input-btn-padding-x-sm:    1.6rem !default;
-$input-btn-line-height-sm:  1 !default;
+$input-btn-line-height-sm:  1.5 !default;
 
 $input-btn-padding-y-lg:    1.1rem !default;
 $input-btn-padding-x-lg:    2.4rem !default;
@@ -440,6 +440,8 @@ $btn-box-shadow:                 0 1px 0 0 rgba($gray-900,0.05) !default;
 $btn-focus-box-shadow:           0 0 0 1px $indigo !default;
 $btn-active-box-shadow:          0 0 0 0 transparent,inset 0 1px 1px 0 rgba($gray-900,0.1),inset 0 1px 4px 0 rgba($gray-900,0.2) !default;
 $btn-height:                      3.6rem !default;
+$btn-height-lg:                      4.4rem !default;
+$btn-height-sm:                      3rem !default;
 
 $btn-link-disabled-color:        $gray-600 !default;
 

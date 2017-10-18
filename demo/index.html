@@ -23,6 +23,13 @@
 </head>
 <body>
   <main class="container">
+    <div class="jumbotron">
+      <h1 class="display-2">Bootstrap Polaris</h1>
+      <p class="lead">A themed verison of bootstrap to appear and act like Shopify Polaris</p>
+    </div>
+
+    <h2 class="display-3">Base Styles and Bootstrap Components</h2>
+
     <h1>h1. Bootstrap heading</h1>
     <h2>h2. Bootstrap heading</h2>
     <h3>h3. Bootstrap heading</h3>
@@ -40,11 +47,11 @@
 
     <hr>
 
-    <h2>Group Layout</h2>
+    <h2 class="display-4">Group Layout</h2>
 
     <div class="row no-gutters">
       <div class="col-md-4">
-        <h2>Quick actions</h2>
+        <h3>Quick actions</h3>
         <p>Select an option for a quick export</p>
       </div>
       <div class="col-md-8 card">
@@ -55,7 +62,7 @@
     </div>
     <div class="row no-gutters">
       <div class="col-md-4">
-        <h2>Quick actions</h2>
+        <h3>Quick actions</h3>
         <p>Select an option for a quick export</p>
       </div>
       <div class="col-md-8 card">
@@ -67,7 +74,7 @@
 
     <hr>
 
-    <h2>Buttons</h2>
+    <h3 class="display-4">Buttons</h3>
 
     <button type="button" class="btn">Button</button>
     <button type="button" class="btn disabled">Disabled</button>
@@ -92,10 +99,25 @@
     <button type="button" class="btn btn-outline-info">Info</button>
     <button type="button" class="btn btn-outline-light">Light</button>
     <button type="button" class="btn btn-outline-dark">Dark</button>
+    <br>
+    <br>
+    <button type="button" class="btn btn-lg">Large button</button>
+    <button type="button" class="btn btn-primary btn-lg">Large button</button>
+    <br>
+    <br>
+    <button type="button" class="btn btn-sm">Small button</button>
+    <button type="button" class="btn btn-primary btn-sm">Small button</button>
     
     <hr>
 
-    <h2>Bootstrap grid examples</h2>
+    <h3 class="display-4">Keyboard Keys</h3>
+    <kbd>Ctr</kbd>
+    <kbd>alt</kbd>
+    <kbd>delete</kbd>
+    
+    <hr>
+
+    <h3 class="display-4">Bootstrap grid examples</h3>
     <p class="lead">Basic grid layouts to get you familiar with building within the Bootstrap grid system.</p>
 
     <h3>Five grid tiers</h3>
@@ -215,6 +237,50 @@
       <div class="col-6 col-sm-4 gird-highlight">.col-6 .col-sm-4</div>
       <div class="col-6 col-sm-4 gird-highlight">.col-6 .col-sm-4</div>
     </div>
+
+    <hr>
+
+    <h2 class="display-3">Polaris Components</h2>
+
+    <h3 class="display-4">Banner</h3>
+
+    <div class="banner">
+      <div class="banner__ribbon">
+        <span class="polaris-icon polaris-icon__has-backdrop">
+            <svg class="polaris-icon__svg" viewBox="0 0 20 20"><g fill-rule="evenodd"><path fill="currentColor" d="M2 3h11v4h6l-2 4 2 4H8v-4H3"></path><path d="M16.105 11.447L17.381 14H9v-2h4a1 1 0 0 0 1-1V8h3.38l-1.274 2.552a.993.993 0 0 0 0 .895zM2.69 4H12v6H4.027L2.692 4zm15.43 7l1.774-3.553A1 1 0 0 0 19 6h-5V3c0-.554-.447-1-1-1H2.248L1.976.782a1 1 0 1 0-1.953.434l4 18a1.006 1.006 0 0 0 1.193.76 1 1 0 0 0 .76-1.194L4.47 12H7v3a1 1 0 0 0 1 1h11c.346 0 .67-.18.85-.476a.993.993 0 0 0 .044-.972l-1.775-3.553z"></path></g></svg>
+        </span>
+      </div>
+      <div>
+        <h3>Order archived</h3>
+        <p>This order was archived on March 7, 2017 at 3:12pm EDT.</p>
+      </div>
+    </div>
+
+    <div class="banner banner--success">
+        <div class="banner__ribbon">
+          <span class="polaris-icon polaris-icon__has-backdrop">
+              <svg class="polaris-icon__svg" viewBox="0 0 20 20"><g fill-rule="evenodd"><circle fill="currentColor" cx="10" cy="10" r="9"></circle><path d="M10 0C4.486 0 0 4.486 0 10s4.486 10 10 10 10-4.486 10-10S15.514 0 10 0m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-13a1 1 0 0 0-1 1v4a1 1 0 1 0 2 0V6a1 1 0 0 0-1-1m0 8a1 1 0 1 0 0 2 1 1 0 0 0 0-2"></path></g></svg>
+          </span>
+        </div>
+        <div>
+          <h3>Your shipping label is ready to print.</h3>
+          <a href="#" class="btn btn-outline-secondary">Print Label</a>
+        </div>
+      </div>
+
+    <div class="banner banner--warning">
+      <div class="banner__ribbon">
+        <span class="polaris-icon polaris-icon__has-backdrop">
+            <svg class="polaris-icon__svg" viewBox="0 0 20 20"><g fill-rule="evenodd"><circle fill="currentColor" cx="10" cy="10" r="9"></circle><path d="M10 0C4.486 0 0 4.486 0 10s4.486 10 10 10 10-4.486 10-10S15.514 0 10 0m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-13a1 1 0 0 0-1 1v4a1 1 0 1 0 2 0V6a1 1 0 0 0-1-1m0 8a1 1 0 1 0 0 2 1 1 0 0 0 0-2"></path></g></svg>
+        </span>
+      </div>
+      <div>
+        <h3>Order archived</h3>
+        <p>This order was archived on March 7, 2017 at 3:12pm EDT.</p>
+      </div>
+    </div>
+
+    <hr>
 
   </main>
 </body>

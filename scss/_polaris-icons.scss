@@ -1,0 +1,38 @@
+.polaris-icon {
+  display: block;
+  height: 2rem;
+  width: 2rem;
+  max-height: 100%;
+  max-width: 100%;
+  margin: auto;
+}
+
+.polaris-icon__has-backdrop {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: .8rem;
+  fill: #637381;
+
+  &:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: -.8rem;
+    bottom: -.8rem;
+    left: -.8rem;
+    right: -.8rem;
+    border-radius: 50%;
+    background-color: #dfe3e8;
+  }
+}
+
+.polaris-icon__svg {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  color: #fff;
+  z-index: 2;
+}
