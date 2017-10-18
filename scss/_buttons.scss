@@ -10,6 +10,8 @@
   min-width: $btn-height;
   font-weight: $btn-font-weight;
   text-align: center;
+  text-transform: none;
+  letter-spacing: normal;
   white-space: nowrap;
   vertical-align: middle;
   user-select: none;
@@ -17,7 +19,7 @@
   border: 1px solid $gray-400;
   @include button-variant($gray-100, $gray-400);
   // border: $input-btn-border-width solid transparent;
-  @include button-size($input-btn-padding-y, $input-btn-padding-x, $font-size-base, $input-btn-line-height, $btn-border-radius);
+  @include button-size($input-btn-padding-y, $input-btn-padding-x, $btn-font-size, $input-btn-line-height, $btn-border-radius);
   @include transition($btn-transition);
 
   // Share hover and focus styles

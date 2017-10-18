@@ -432,9 +432,10 @@ $input-btn-line-height-sm:  1 !default;
 
 $input-btn-padding-y-lg:    1.1rem !default;
 $input-btn-padding-x-lg:    2.4rem !default;
-$input-btn-line-height-lg:  1 !default;
+$input-btn-line-height-lg:  1.6 !default;
 
 $btn-font-weight:                $font-weight-normal !default;
+$btn-font-size:                  1.5rem !default;
 $btn-box-shadow:                 0 1px 0 0 rgba($gray-900,0.05) !default;
 $btn-focus-box-shadow:           0 0 0 1px $indigo !default;
 $btn-active-box-shadow:          0 0 0 0 transparent,inset 0 1px 1px 0 rgba($gray-900,0.1),inset 0 1px 4px 0 rgba($gray-900,0.2) !default;
