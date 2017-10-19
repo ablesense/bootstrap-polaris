@@ -49,6 +49,44 @@
   // as much space as possible, ensuring footers are aligned to the bottom.
   flex: 1 1 auto;
   padding: $card-spacer-x;
+
+  p:last-of-type {
+    margin-bottom: 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+    margin-bottom: 2rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+
+    @include media-breakpoint-up(sm) {
+      font-size: 1.6rem;
+    }
+  }
+
+  & + .card-body {
+    border-top: 1px solid $gray-300;
+  }
+}
+
+.card-body--muted {
+  background-color: $gray-100;
+}
+
+.card-action {
+  display: flex;
+  justify-content: flex-end;
+  // Enable `flex-grow: 1` for decks and groups so that card blocks take up
+  // as much space as possible, ensuring footers are aligned to the bottom.
+  flex: 1 1 auto;
+  padding: $card-spacer-x;
 }
 
 .card-title {
@@ -94,13 +132,23 @@
 //
 
 .card-header {
-  padding: $card-spacer-y $card-spacer-x;
+  padding: $card-spacer-y $card-spacer-x 0 $card-spacer-x;
   margin-bottom: 0; // Removes the default margin-bottom of <hN>
-  background-color: $card-cap-bg;
-  border-bottom: $card-border-width solid $card-border-color;
 
-  &:first-child {
-    @include border-radius($card-inner-border-radius $card-inner-border-radius 0 0);
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+    font-size: 1.7rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+
+    @include media-breakpoint-up(sm) {
+      font-size: 1.6rem;
+    }
   }
 }
 

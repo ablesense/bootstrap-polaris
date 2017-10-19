@@ -47,7 +47,7 @@
 
     <hr>
 
-    <h2 class="display-4">Group Layout</h2>
+    <h2 class="display-4">Card Layout</h2>
 
     <div class="row no-gutters">
       <div class="col-md-4 card-anotation">
@@ -56,6 +56,7 @@
       </div>
       <div class="col-md-8 card">
         <div class="card-body">
+          <h3>Actions</h3>
           <p>There are five tiers to the Bootstrap grid system, one for each range of devices we support. Each tier starts at a minimum</p>
         </div>
       </div>
@@ -67,48 +68,86 @@
       </div>
       <div class="col-md-8 card">
         <div class="card-body">
-            <form>
-              <label for="created_at_min">Start Date</label>
-              <input type="date" class="form-control" name="created_at_min" id="created_at_min">
-  
-              <label for="created_at_max">End Date</label>
-                <input type="date" class="form-control" name="created_at_max" id="created_at_max">
-  
-              <fieldset>
-                <legend>Financial Status</legend>
-                <ul class="list-unstyled">
-                  <li>
-                    <label for="paid">
-                      <input type="radio" name="financial_status" id="paid" value="paid">
-                      <span>Paid</span>
-                    </label>
-                  </li>
-                  <li>
-                    <label for="refunded">
-                      <input type="radio" name="financial_status" id="refunded" value="refunded">
-                      <span>Refunded</span>
-                    </label>
-                  </li>
-                  <li>
-                    <label for="partially_refunded">
-                      <input type="radio" name="financial_status" id="partially_refunded" value="partially_refunded">
-                      <span>Partially Refunded</span>
-                    </label>
-                  </li>
-                  <li>
-                    <label for="any">
-                      <input type="radio" name="financial_status" id="any" value="any">
-                      <span>Any</span>
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
-  
-              <button type="submit" class="btn btn-primary btn-lg">Exportify!</button>
-            </form>
+          <h3>Custom Export</h3>
+          <form>
+            <label for="created_at_min">Start Date</label>
+            <input type="date" class="form-control" name="created_at_min" id="created_at_min">
+
+            <label for="created_at_max">End Date</label>
+              <input type="date" class="form-control" name="created_at_max" id="created_at_max">
+
+            <fieldset>
+              <legend>Financial Status</legend>
+              <ul class="list-unstyled">
+                <li>
+                  <label for="paid">
+                    <input type="radio" name="financial_status" id="paid" value="paid">
+                    <span>Paid</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="refunded">
+                    <input type="radio" name="financial_status" id="refunded" value="refunded">
+                    <span>Refunded</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="partially_refunded">
+                    <input type="radio" name="financial_status" id="partially_refunded" value="partially_refunded">
+                    <span>Partially Refunded</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="any">
+                    <input type="radio" name="financial_status" id="any" value="any">
+                    <span>Any</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <button type="submit" class="btn btn-primary btn-lg">Exportify!</button>
+          </form>
         </div>
       </div>
     </div>
+    <div class="row no-gutters">
+      <div class="col-md-4 card-anotation">
+        <h3>Quick actions</h3>
+        <p>Select an option for a quick export</p>
+      </div>
+      <div class="col-md-8 card">
+        <div class="card-body">
+          <p>There are five tiers to the Bootstrap grid system, one for each range of devices we support. Each tier starts at a minimum</p>
+        </div>
+        <div class="card-body">
+          <p>There are five tiers to the Bootstrap grid system, one for each range of devices we support. Each tier starts at a minimum</p>
+        </div>
+        <div class="card-body card-body--muted">
+          <p>There are five tiers to the Bootstrap grid system, one for each range of devices we support. Each tier starts at a minimum</p>
+        </div>
+      </div>
+    </div>
+    <div class="row no-gutters">
+      <div class="col-md-4 card-anotation">
+        <h3>Quick actions</h3>
+        <p>Select an option for a quick export</p>
+      </div>
+      <div class="col-md-8 card">
+        <div class="card-body">
+          <h3>Action</h3>
+          <p>There are five tiers to the Bootstrap grid system, one for each range of devices we support. Each tier starts at a minimum</p>
+        </div>
+        <div class="card-action">
+          <a href="#" class="btn btn-primary">View Dashboard</a>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <h3 class="display-4">Form</h3>
+
     <div class="row no-gutters">
         <div class="col-md-4 card-anotation">
           <h3>Form Elements</h3>
@@ -117,19 +156,20 @@
           <div class="card-body">
             <form>
               <label for="text">Text</label>
-              <input type="text" class="form-control" name="text">
+              <input type="text" id="text" class="form-control" name="text">
               <label for="email">Email</label>
-              <input type="email" class="form-control" name="email">
+              <input type="email" id="email" class="form-control" name="email">
               <label for="password">Password</label>
-              <input type="password" class="form-control" name="password">
+              <input type="password" id="password" class="form-control" name="password" aria-describedby="passwordHelpBlock">
+              <small id="passwordHelpBlock" class="form-text text-muted">Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.</small>
               <label for="number">Number</label>
-              <input type="number" class="form-control" name="number">
+              <input type="number" id="number" class="form-control" name="number">
               <label for="search">Search</label>
-              <input type="search" class="form-control" name="search">
+              <input type="search" id="search" class="form-control" name="search">
               <label for="tel">Tel</label>
-              <input type="tel" class="form-control" name="tel">
+              <input type="tel" id="tel" class="form-control" name="tel">
               <label for="url">URL</label>
-              <input type="url" class="form-control" name="url">
+              <input type="url" id="url" class="form-control" name="url">
               <label for="select">Select</label>
               <select name="select" id="select" class="form-control">
                 <option value="1">One</option>
@@ -137,6 +177,20 @@
                 <option value="3">Three</option>
                 <option value="4">Four</option>
               </select>
+  
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="row no-gutters">
+        <div class="col-md-4 card-anotation">
+          <h3>Form Layout</h3>
+        </div>
+        <div class="col-md-8 card">
+          <div class="card-body">
+            <form>
+              
   
             </form>
           </div>
