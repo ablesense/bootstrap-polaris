@@ -12,6 +12,7 @@
 
   &:focus {
     outline: none;
+    box-shadow: inset 0 3px 0 0 color(ink, lighter), inset 0 0 0 3px color(ink, lighter), 0 0 0 1px rgba(63,63,68,.05), 0 1px 3px 0 rgba(63,63,68,.15);
   }
 
   h1,
@@ -22,6 +23,27 @@
   h6,
   p {
     margin: 0;
+  }
+
+  .btn {
+    margin-top: 1.5rem;
+  }
+}
+
+.banner--success {
+  background-color: color(green, lighter);
+  box-shadow: inset 0 3px 0 0 color(green, base), inset 0 0 0 0 transparent, 0 0 0 1px rgba(63,63,68,.05), 0 1px 3px 0 rgba(63,63,68,.15);
+
+  .polaris-icon__has-backdrop {
+    fill: color(green, dark);
+  
+    &:after {
+      background-color: color(green, light);
+    }
+  }
+
+  &:focus {
+    box-shadow: inset 0 3px 0 0 color(green, base), inset 0 0 0 3px color(green, base), 0 0 0 1px rgba(63,63,68,.05), 0 1px 3px 0 rgba(63,63,68,.15);
   }
 }
 
@@ -35,6 +57,44 @@
     &:after {
       background-color: color(yellow, light);
     }
+  }
+
+  &:focus {
+    box-shadow: inset 0 3px 0 0 color(yellow, base), inset 0 0 0 3px color(yellow, base), 0 0 0 1px rgba(63,63,68,.05), 0 1px 3px 0 rgba(63,63,68,.15);
+  }
+}
+
+.banner--critical {
+  background-color: color(red, lighter);
+  box-shadow: inset 0 3px 0 0 color(red, base), inset 0 0 0 0 transparent, 0 0 0 1px rgba(63,63,68,.05), 0 1px 3px 0 rgba(63,63,68,.15);
+
+  .polaris-icon__has-backdrop {
+    fill: color(red, dark);
+  
+    &:after {
+      background-color: color(red, light);
+    }
+  }
+
+  &:focus {
+    box-shadow: inset 0 3px 0 0 color(red, base), inset 0 0 0 3px color(red, base), 0 0 0 1px rgba(63,63,68,.05), 0 1px 3px 0 rgba(63,63,68,.15);
+  }
+}
+
+.banner--info {
+  background-color: color(teal, lighter);
+  box-shadow: inset 0 3px 0 0 color(teal, base), inset 0 0 0 0 transparent, 0 0 0 1px rgba(63,63,68,.05), 0 1px 3px 0 rgba(63,63,68,.15);
+
+  .polaris-icon__has-backdrop {
+    fill: color(teal, dark);
+  
+    &:after {
+      background-color: color(teal, light);
+    }
+  }
+
+  &:focus {
+    box-shadow: inset 0 3px 0 0 color(teal, base), inset 0 0 0 3px color(teal, base), 0 0 0 1px rgba(63,63,68,.05), 0 1px 3px 0 rgba(63,63,68,.15);
   }
 }
 

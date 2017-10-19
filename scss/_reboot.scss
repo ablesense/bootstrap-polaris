@@ -141,6 +141,30 @@ ul ol {
   margin-bottom: 0;
 }
 
+ol, ul {
+  list-style: none;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+li {
+  position: relative;
+  margin-bottom: .8rem;
+  padding-left: 1.6rem;
+
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+  }
+}
+
+ul > li:before {
+  content: "\2022";
+  font-size: 1.8rem;
+}
+
 dt {
   font-weight: $dt-font-weight;
 }
