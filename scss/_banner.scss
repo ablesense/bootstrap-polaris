@@ -20,9 +20,24 @@
   h3,
   h4,
   h5,
-  h6,
-  p {
+  h6 {
     margin: 0;
+    font-size: 1.7rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+
+    @include media-breakpoint-up(sm) {
+      font-size: 1.6rem;
+    }
+  }
+
+  p, li {
+    margin: 0;
+    font-size: 1.5rem;
+
+    @include media-breakpoint-up(sm) {
+      font-size: 1.4rem;
+    }
   }
 
   .btn {
