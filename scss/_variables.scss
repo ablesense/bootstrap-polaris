@@ -260,7 +260,7 @@ $body-color:    $gray-900 !default;
 //
 // Style anchor elements.
 
-$link-color:            theme-color("primary") !default;
+$link-color:            $blue !default;
 $link-decoration:       none !default;
 $link-hover-color:      darken($link-color, 15%) !default;
 $link-hover-decoration: underline !default;
@@ -357,16 +357,20 @@ $headings-font-weight:   400 !default;
 $headings-line-height:   1.6 !default;
 $headings-color:         inherit !default;
 
-$display1-size: 6rem !default;
-$display2-size: 5.5rem !default;
-$display3-size: 4.5rem !default;
-$display4-size: 3.5rem !default;
+$display1-size: 4.2rem !default;
+$display2-size: 2.8rem !default;
+$display3-size: 2.6rem !default;
+$display4-size: 2rem !default;
 
-$display1-weight:     300 !default;
-$display2-weight:     300 !default;
-$display3-weight:     300 !default;
-$display4-weight:     300 !default;
-$display-line-height: $headings-line-height !default;
+$display1-weight:     600 !default;
+$display2-weight:     600 !default;
+$display3-weight:     400 !default;
+$display4-weight:     400 !default;
+
+$display1-line-height: 4.4rem !default;
+$display2-line-height: 3.2rem !default;
+$display3-line-height: 3.2rem !default;
+$display4-line-height: 2.8rem !default;
 
 $lead-font-size:   1.6rem !default;
 $lead-font-weight: 300 !default;
