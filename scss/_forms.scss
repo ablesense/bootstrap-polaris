@@ -63,9 +63,17 @@
   }
 }
 
+.polaris-select {
+  padding: 0;
+
+  > select, > .form-control {
+    border: 0;
+  }
+}
+
 select.form-control {
   &:not([size]):not([multiple]) {
-    height: $input-height;
+    height: 3.6rem;
   }
 
   &:focus::-ms-value {

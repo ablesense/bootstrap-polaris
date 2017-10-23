@@ -1,0 +1,40 @@
+.footer-help {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 2rem 0;
+  padding: 0 2rem;
+}
+
+.footer-help__content {
+  display: inline-flex;
+  align-items: center;
+  padding: 1.6rem 2rem 1.6rem 1.6rem;
+  border: 1px solid $gray-300;
+  border-radius: 999px;
+
+  p {
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    text-transform: none;
+    letter-spacing: normal;
+
+    @include media-breakpoint-up(sm) {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+.footer-help__icon {
+  margin-right: .8rem;
+
+  .polaris-icon__has-backdrop {
+    fill: color(teal, base);
+
+    &:after {
+      background-color: $white;
+    }
+  }
+}
