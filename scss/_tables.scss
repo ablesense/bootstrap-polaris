@@ -29,6 +29,16 @@
   }
 }
 
+th {
+  font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+
+  @include media-breakpoint-up(sm) {
+    font-size: 1.6rem;
+  }
+}
+
 
 //
 // Condensed table w/ half padding

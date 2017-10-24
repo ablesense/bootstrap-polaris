@@ -296,8 +296,7 @@
     <hr>
 
     <h3 class="display-3">Keyboard Keys
-      <a href="https://polaris.shopify.com/components/images-and-icons/keyboard-key#navigation" class="btn btn-link btn-sm"
-        target="_blank">Polaris usage guide</a>
+      <a href="https://polaris.shopify.com/components/images-and-icons/keyboard-key#navigation" class="btn btn-link btn-sm" target="_blank">Polaris usage guide</a>
     </h3>
     <p>
       <kbd>Ctr</kbd>+
@@ -321,8 +320,7 @@
     <hr>
 
     <h2 class="display-2">Polaris Components
-      <a href="https://polaris.shopify.com/components/feedback-indicators/banner#navigation" class="btn btn-link btn-sm"
-        target="_blank">Polaris usage guide</a>
+      <a href="https://polaris.shopify.com/components/feedback-indicators/banner#navigation" class="btn btn-link btn-sm" target="_blank">Polaris usage guide</a>
     </h2>
 
     <h3 class="display-3">Banner</h3>
@@ -376,7 +374,8 @@
         <h3>Before you can purchase a shipping label, this change needs to be made:</h3>
         <ul>
           <li>The name of the city you’re shipping to has characters that aren’t allowed. City name can only include spaces and
-            hyphens.</li>
+            hyphens.
+          </li>
         </ul>
         <a href="#" class="btn btn-outline-secondary">Edit Address</a>
       </div>
@@ -433,10 +432,183 @@
             </svg>
           </span>
         </div>
-        <p>Ask about our free <a class="Polaris-Link" href="#" data-polaris-unstyled="true">custom export configurations</a>.</p>
+        <p>Ask about our free
+          <a class="Polaris-Link" href="#" data-polaris-unstyled="true">custom export configurations</a>.</p>
       </div>
     </div>
-    
+
+    <hr>
+
+    <h3 class="display-3">Tables</h3>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">First Name</th>
+          <th scope="col">Last Name</th>
+          <th scope="col">Username</th>
+          <th scope="col">Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+          <td>me@me.ca</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+          <td>me@me.ca</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>@twitter</td>
+          <td>me@me.ca</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr>
+
+    <h3 class="display-3">Pagination</h3>
+
+    <div class="row">
+      <div class="col-md-4 card-anotation">
+        <h3>Pagination using links</h3>
+        <p>Disabled buttons use a class of <code>.disabled</code> on the list item and <code>tab-index="-1"</code> on the anchor itself</p>
+      </div>
+      <div class="col-md-8 card">
+        <div class="card-body">
+          <nav>
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#">
+                  <span class="polaris-icon">
+                    <svg class="polaris-icon__svg" viewBox="0 0 20 20">
+                      <path d="M17 9H5.414l3.293-3.293a.999.999 0 1 0-1.414-1.414l-5 5a.999.999 0 0 0 0 1.414l5 5a.997.997 0 0 0 1.414 0 .999.999 0 0 0 0-1.414L5.414 11H17a1 1 0 1 0 0-2"
+                        fill-rule="evenodd"></path>
+                    </svg>
+                  </span>
+                  <span class="sr-only">Previous</span>
+                </a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">
+                  <span class="polaris-icon">
+                    <svg class="polaris-icon__svg" viewBox="0 0 20 20">
+                      <path d="M17.707 9.293l-5-5a.999.999 0 1 0-1.414 1.414L14.586 9H3a1 1 0 1 0 0 2h11.586l-3.293 3.293a.999.999 0 1 0 1.414 1.414l5-5a.999.999 0 0 0 0-1.414"
+                        fill-rule="evenodd"></path>
+                    </svg>
+                  </span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <nav>
+            <ul class="pagination">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1">
+                  <span class="polaris-icon">
+                    <svg class="polaris-icon__svg" viewBox="0 0 20 20">
+                      <path d="M17 9H5.414l3.293-3.293a.999.999 0 1 0-1.414-1.414l-5 5a.999.999 0 0 0 0 1.414l5 5a.997.997 0 0 0 1.414 0 .999.999 0 0 0 0-1.414L5.414 11H17a1 1 0 1 0 0-2"
+                        fill-rule="evenodd"></path>
+                    </svg>
+                  </span>
+                  <span class="sr-only">Previous</span>
+                </a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">
+                  <span class="polaris-icon">
+                    <svg class="polaris-icon__svg" viewBox="0 0 20 20">
+                      <path d="M17.707 9.293l-5-5a.999.999 0 1 0-1.414 1.414L14.586 9H3a1 1 0 1 0 0 2h11.586l-3.293 3.293a.999.999 0 1 0 1.414 1.414l5-5a.999.999 0 0 0 0-1.414"
+                        fill-rule="evenodd"></path>
+                    </svg>
+                  </span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <nav>
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#">
+                  <span class="polaris-icon">
+                    <svg class="polaris-icon__svg" viewBox="0 0 20 20">
+                      <path d="M17 9H5.414l3.293-3.293a.999.999 0 1 0-1.414-1.414l-5 5a.999.999 0 0 0 0 1.414l5 5a.997.997 0 0 0 1.414 0 .999.999 0 0 0 0-1.414L5.414 11H17a1 1 0 1 0 0-2"
+                        fill-rule="evenodd"></path>
+                    </svg>
+                  </span>
+                  <span class="sr-only">Previous</span>
+                </a>
+              </li>
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1">
+                  <span class="polaris-icon">
+                    <svg class="polaris-icon__svg" viewBox="0 0 20 20">
+                      <path d="M17.707 9.293l-5-5a.999.999 0 1 0-1.414 1.414L14.586 9H3a1 1 0 1 0 0 2h11.586l-3.293 3.293a.999.999 0 1 0 1.414 1.414l5-5a.999.999 0 0 0 0-1.414"
+                        fill-rule="evenodd"></path>
+                    </svg>
+                  </span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 card-anotation">
+        <h3>Pagination using buttons</h3>
+        <p>Disabled buttons use a class of <code>.disabled</code> on the list item and the <code>disabled</code> attribute on the button element</p>
+      </div>
+      <div class="col-md-8 card">
+        <div class="card-body">
+          <nav>
+            <ul class="pagination">
+              <li class="page-item">
+                <button type="button" class="page-link">
+                  <span class="polaris-icon">
+                    <svg class="polaris-icon__svg" viewBox="0 0 20 20">
+                      <path d="M17 9H5.414l3.293-3.293a.999.999 0 1 0-1.414-1.414l-5 5a.999.999 0 0 0 0 1.414l5 5a.997.997 0 0 0 1.414 0 .999.999 0 0 0 0-1.414L5.414 11H17a1 1 0 1 0 0-2"
+                        fill-rule="evenodd"></path>
+                    </svg>
+                  </span>
+                  <span class="sr-only">Previous</span>
+                </button>
+              </li>
+              <li class="page-item disabled">
+                <button type="button" class="page-link" disabled>
+                  <span class="polaris-icon">
+                    <svg class="polaris-icon__svg" viewBox="0 0 20 20">
+                      <path d="M17.707 9.293l-5-5a.999.999 0 1 0-1.414 1.414L14.586 9H3a1 1 0 1 0 0 2h11.586l-3.293 3.293a.999.999 0 1 0 1.414 1.414l5-5a.999.999 0 0 0 0-1.414"
+                        fill-rule="evenodd"></path>
+                    </svg>
+                  </span>
+                  <span class="sr-only">Next</span>
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
 
     <hr>
 

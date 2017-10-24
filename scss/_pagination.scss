@@ -1,5 +1,6 @@
 .pagination {
   display: flex;
+  justify-content: center;
   // 1-2: Disable browser default list styles
   padding-left: 0; // 1
   list-style: none; // 2
@@ -30,7 +31,9 @@
     color: $pagination-disabled-color;
     pointer-events: none;
     background-color: $pagination-disabled-bg;
+    background-image: none;
     border-color: $pagination-disabled-border-color;
+    fill: $gray-500;
   }
 }
 
@@ -41,8 +44,9 @@
   margin-left: -1px;
   line-height: $pagination-line-height;
   color: $pagination-color;
-  background-color: $pagination-bg;
+  @include gradient-directional($white, $pagination-bg, 180deg);
   border: $pagination-border-width solid $pagination-border-color;
+  fill: $gray-600;
 
   @include hover-focus {
     color: $pagination-hover-color;
