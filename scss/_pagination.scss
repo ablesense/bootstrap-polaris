@@ -47,12 +47,23 @@
   @include gradient-directional($white, $pagination-bg, 180deg);
   border: $pagination-border-width solid $pagination-border-color;
   fill: $gray-600;
+  transition: box-shadow 0.2s cubic-bezier(.64,0,.35,1),
+              border-color 0.2s cubic-bezier(.64,0,.35,1),
+              background 0.2s cubic-bezier(.64,0,.35,1),
+              color 0.2s cubic-bezier(.64,0,.35,1);
 
-  @include hover-focus {
+  &:hover {
     color: $pagination-hover-color;
     text-decoration: none;
     background-color: $pagination-hover-bg;
     border-color: $pagination-hover-border-color;
+  }
+  &:focus, &:focus:hover {
+    text-decoration: none;
+    z-index: 20;
+    border-color: $indigo;
+    outline: 0;
+    box-shadow: 0 0 0 1px $indigo;
   }
 }
 
