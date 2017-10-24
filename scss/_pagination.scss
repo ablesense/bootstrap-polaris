@@ -47,23 +47,25 @@
   @include gradient-directional($white, $pagination-bg, 180deg);
   border: $pagination-border-width solid $pagination-border-color;
   fill: $gray-600;
+  z-index: 10;
+  text-decoration: none;
+  box-shadow: 0 0 0 0 transparent;
   transition: box-shadow 0.2s cubic-bezier(.64,0,.35,1),
               border-color 0.2s cubic-bezier(.64,0,.35,1),
               background 0.2s cubic-bezier(.64,0,.35,1),
               color 0.2s cubic-bezier(.64,0,.35,1);
 
-  &:hover {
-    color: $pagination-hover-color;
-    text-decoration: none;
-    background-color: $pagination-hover-bg;
-    border-color: $pagination-hover-border-color;
-  }
-  &:focus, &:focus:hover {
+  &:focus {
     text-decoration: none;
     z-index: 20;
     border-color: $indigo;
     outline: 0;
     box-shadow: 0 0 0 1px $indigo;
+  }
+  &:active {
+    @include gradient-directional($pagination-bg, $pagination-bg, 180deg);
+    border-color: #c4cdd5;
+    box-shadow: 0 0 0 0 transparent, inset 0 1px 1px 0 rgba($gray-900,.1), inset 0 1px 4px 0 rgba($gray-900,.2);
   }
 }
 
