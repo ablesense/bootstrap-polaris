@@ -25,6 +25,7 @@ html {
   line-height: 1.15; // 3
   -webkit-text-size-adjust: 100%; // 4
   -ms-text-size-adjust: 100%; // 4
+  text-rendering: optimizeLegibility;
   -ms-overflow-style: scrollbar; // 5
   -webkit-tap-highlight-color: rgba(0,0,0,0); // 6
   -webkit-font-smoothing: antialiased;
@@ -52,7 +53,9 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 // 2. As a best practice, apply a default `background-color`.
 
 body {
+  min-height: 100%;
   margin: 0; // 1
+  padding: 0;
   font-family: $font-family-base;
   font-size: $font-size-base;
   font-weight: $font-weight-base;
@@ -91,19 +94,14 @@ hr {
 //
 // By default, `<h1>`-`<h6>` all receive top and bottom margins. We nuke the top
 // margin for easier control within type scales as it avoids margin collapsing.
-h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
-  margin-bottom: .5rem;
-  font-weight: 400;
-}
-
 // Reset margins on paragraphs
 //
 // Similarly, the top margin on `<p>`s get reset. However, we also reset the
 // bottom margin to use `rem` units instead of `em`.
-p {
+h1, h2, h3, h4, h5, h6, p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
+  font-weight: 400;
 }
 
 // Abbreviations
@@ -214,13 +212,14 @@ sup { top: -.5em; }
 
 a {
   color: $link-color;
-  text-decoration: $link-decoration;
   background-color: transparent; // Remove the gray background on active links in IE 10.
-  -webkit-text-decoration-skip: objects; // Remove gaps in links underline in iOS 8+ and Safari 8+.
+  text-decoration: none;
 
-  @include hover {
-    color: $link-hover-color;
-    text-decoration: $link-hover-decoration;
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+    color: color(blue, dark);
   }
 }
 
@@ -344,6 +343,13 @@ label {
   // Allow labels to use `margin` for spacing.
   display: inline-block;
   margin-bottom: .5rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2rem;
+  text-transform: none;
+  letter-spacing: normal;
+  color: currentColor;
+  -webkit-tap-highlight-color: transparent;
 }
 
 // Work around a Firefox/IE bug where the transparent `button` background
@@ -436,13 +442,16 @@ fieldset {
 // 1. Correct the text wrapping in Edge and IE.
 // 2. Correct the color inheritance from `fieldset` elements in IE.
 legend {
-  display: block;
+  display: inline-block;
   width: 100%;
   max-width: 100%; // 1
-  padding: 0;
   margin-bottom: .5rem;
+  padding: 0;
   font-size: 1.5rem;
-  line-height: inherit;
+  font-weight: 400;
+  line-height: 2rem;
+  text-transform: none;
+  letter-spacing: normal;
   color: inherit; // 2
   white-space: normal; // 1
 }

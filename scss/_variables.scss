@@ -84,19 +84,19 @@ $teal:    #47c1bf !default;
 $cyan:    #17a2b8 !default;
 
 $colors: (
-  blue: $blue,
-  indigo: $indigo,
-  purple: $purple,
-  pink: $pink,
-  red: $red,
-  orange: $orange,
-  yellow: $yellow,
-  green: $green,
-  teal: $teal,
-  cyan: $cyan,
-  white: $white,
-  gray: $gray-600,
-  gray-dark: $gray-800
+  blue:       $blue,
+  indigo:     $indigo,
+  purple:     $purple,
+  pink:       $pink,
+  red:        $red,
+  orange:     $orange,
+  yellow:     $yellow,
+  green:      $green,
+  teal:       $teal,
+  cyan:       $cyan,
+  white:      $white,
+  gray:       $gray-600,
+  gray-dark:  $gray-800
 ) !default;
 
 // Need to define the raw colors somewhere!
@@ -282,6 +282,8 @@ $grid-breakpoints: (
 @include _assert-starts-at-zero($grid-breakpoints);
 
 
+// 40em
+
 // Grid containers
 //
 // Define the maximum width of `.container` for different screen sizes.
@@ -344,17 +346,17 @@ $font-weight-bold: 600 !default;
 $font-weight-base: $font-weight-normal !default;
 $line-height-base: 1.6 !default;
 
-$h1-font-size: 2.25rem !default;
-$h2-font-size: 2rem !default;
-$h3-font-size: 1.75rem !default;
-$h4-font-size: 1.5rem !default;
-$h5-font-size: 1.25rem !default;
-$h6-font-size: 1rem !default;
+$h1-font-size: $font-size-base !default;
+$h2-font-size: $font-size-base !default;
+$h3-font-size: $font-size-base !default;
+$h4-font-size: $font-size-base !default;
+$h5-font-size: $font-size-base !default;
+$h6-font-size: $font-size-base !default;
 
 $headings-margin-bottom: ($spacer / 2) !default;
 $headings-font-family:   inherit !default;
-$headings-font-weight:   400 !default;
-$headings-line-height:   1.6 !default;
+$headings-font-weight:   600 !default;
+$headings-line-height:   2.4rem !default;
 $headings-color:         inherit !default;
 
 $display1-size: 4.2rem !default;
@@ -401,7 +403,7 @@ $mark-bg: $gray-100 !default;
 //
 // Customizes the `.table` component with basic values, each used across all table variations.
 
-$table-cell-padding:            1.4rem !default;
+$table-cell-padding:            0.8rem 1.6rem !default;
 $table-cell-padding-sm:         1rem !default;
 
 $table-bg:                      transparent !default;

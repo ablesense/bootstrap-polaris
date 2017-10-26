@@ -1,0 +1,11 @@
+@mixin polaris-header {
+  margin: 0;
+  font-size: 1.7rem;
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+  
+  @include media-breakpoint-up(sm) {
+    font-size: 1.6rem;
+  }
+}

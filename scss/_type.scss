@@ -2,21 +2,14 @@
 // Headings
 //
 
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
-  margin: $headings-margin-bottom 0;
-  font-family: $headings-font-family;
-  font-weight: $headings-font-weight;
-  line-height: $headings-line-height;
-  color: $headings-color;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include polaris-header;
 }
-
-h1, .h1 { font-size: $h1-font-size; }
-h2, .h2 { font-size: $h2-font-size; }
-h3, .h3 { font-size: $h3-font-size; }
-h4, .h4 { font-size: $h4-font-size; }
-h5, .h5 { font-size: $h5-font-size; }
-h6, .h6 { font-size: $h6-font-size; }
 
 .lead {
   font-size: $lead-font-size;
@@ -43,6 +36,10 @@ h6, .h6 { font-size: $h6-font-size; }
   font-size: $display4-size;
   font-weight: $display4-weight;
   line-height: $display4-line-height;
+}
+
+.polaris-heading {
+  @include polaris-header;
 }
 
 

@@ -49,6 +49,8 @@
   fill: $gray-600;
   z-index: 10;
   text-decoration: none;
+  cursor: pointer;
+  user-select: none;
   box-shadow: 0 0 0 0 transparent;
   transition: box-shadow 0.2s cubic-bezier(.64,0,.35,1),
               border-color 0.2s cubic-bezier(.64,0,.35,1),

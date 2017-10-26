@@ -84,13 +84,15 @@
         <div class="card-body">
           <h3>Custom Export</h3>
           <form>
-            <label for="created_at_min">Start Date</label>
-            <input type="date" class="form-control" name="created_at_min" id="created_at_min">
+            <div class="form-group">
+              <label for="created_at_min">Start Date</label>
+              <input type="date" class="form-control" name="created_at_min" id="created_at_min">
 
-            <label for="created_at_max">End Date</label>
-            <input type="date" class="form-control" name="created_at_max" id="created_at_max">
+              <label for="created_at_max">End Date</label>
+              <input type="date" class="form-control" name="created_at_max" id="created_at_max">
+            </div>
 
-            <fieldset>
+            <fieldset class="form-group">
               <legend>Financial Status</legend>
               <ul class="list-unstyled">
                 <li>
@@ -449,6 +451,51 @@
           <th scope="col">Last Name</th>
           <th scope="col">Username</th>
           <th scope="col">Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+          <td>me@me.ca</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+          <td>me@me.ca</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>@twitter</td>
+          <td>me@me.ca</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col" class="sort">
+            <a href="#" class="active">#</a>
+          </th>
+          <th scope="col" class="sort">
+            <a href="#">First Name</a>
+          </th>
+          <th scope="col" class="sort">
+            <a href="#">Last Name</a>
+          </th>
+          <th scope="col" class="sort">
+            <a href="#">Username</a>
+          </th>
+          <th scope="col" class="sort">
+            <a href="#">Email</a>
+          </th>
         </tr>
       </thead>
       <tbody>

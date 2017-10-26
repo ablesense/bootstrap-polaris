@@ -15,22 +15,6 @@
     box-shadow: inset 0 3px 0 0 color(ink, lighter), inset 0 0 0 3px color(ink, lighter), 0 0 0 1px rgba(63,63,68,.05), 0 1px 3px 0 rgba(63,63,68,.15);
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin: 0;
-    font-size: 1.7rem;
-    font-weight: 600;
-    line-height: 2.4rem;
-
-    @include media-breakpoint-up(sm) {
-      font-size: 1.6rem;
-    }
-  }
-
   p, li {
     margin: 0;
     font-size: 1.5rem;
