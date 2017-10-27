@@ -17,6 +17,11 @@
 }
 
 .card-anotation {
+  padding: 2rem;
+
+  @include media-breakpoint-up(sm) {
+    padding: 2rem 2rem 2rem 0;
+  }
 
   p {
     margin: 0;
@@ -39,7 +44,11 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
 
-    &:last-of-type {
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
       margin-bottom: 0;
     }
   }
