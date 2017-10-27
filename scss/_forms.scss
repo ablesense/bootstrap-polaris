@@ -63,15 +63,14 @@
   }
 }
 
-.polaris-select {
-  padding: 0;
-
-  > select, > .form-control {
-    border: 0;
-  }
-}
-
 select.form-control {
+  appearance: none;
+  color: $gray-500;
+  background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20d%3D%22M13%208l-3-3-3%203h6zm-.1%204L10%2014.9%207.1%2012h5.8z%22%20fill%3D%22%23637381%22%20fill-rule%3D%22evenodd%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+  background-size: auto 60%;
+  background-repeat: no-repeat;
+  background-position: 99% 50%;
+  
   &:not([size]):not([multiple]) {
     height: 3.6rem;
   }
