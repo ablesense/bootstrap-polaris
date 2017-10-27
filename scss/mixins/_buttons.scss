@@ -5,7 +5,7 @@
 
 @mixin button-variant($background, $border, $active-background: darken($background, 3%), $active-border: darken($border, 10%)) {
   @include color-yiq($background);
-  // background-color: $background;
+  background-color: $background;
   @include gradient-y(lighten($background, 5%), $background);
   border-color: darken($background, 10%);
   // box-shadow: 0 0 0 0 transparent,inset 0 1px 1px 0 lighten($background, 5%),inset 0 1px 4px 0 rgba($gray-900,0.2);
@@ -49,6 +49,7 @@
   @include hover {
     color: $gray-900;
     background-color: rgba($gray-800, 0.05);
+    background-image: none;
     border-color: darken($color, 10%);
   }
 
