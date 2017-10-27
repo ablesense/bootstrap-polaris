@@ -1,0 +1,85 @@
+.polaris-list {
+  list-style: none;
+  margin-top: 0;
+  padding-left: 0;
+
+  > li {
+    position: relative;
+    margin-bottom: .8rem;
+    padding-left: 1.6rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
+
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+    }
+  }
+}
+
+ol.polaris-list {
+  counter-reset: ordered-counter;
+
+  > li {
+    &:before {
+      content: counter(ordered-counter,decimal) ".";
+      font-weight: 600;
+      counter-increment: ordered-counter;
+      font-size: 1.2rem;
+      vertical-align: top;
+    }
+  }
+}
+
+ul.polaris-list {
+
+  > li {
+    &:before {
+      content: "\2022";
+      font-size: 1.8rem;
+    }
+  }
+}
+
+.polaris-description {
+  margin: 0;
+  padding: 0;
+
+  @include media-breakpoint-up(sm) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  > dt {
+    font-weight: 600;
+    padding: 1.6rem 0 .8rem;
+    border-top: 1px solid $gray-300;
+
+    &:first-of-type {
+      border-top: 0;
+    }
+
+    @include media-breakpoint-up(sm) {
+      flex: 0 1 25%;
+      padding: 1.6rem 1.6rem 1.6rem 0;
+    }
+  }
+
+  > dd {
+    margin-left: 0;
+    padding: 0 0 1.6rem;
+
+    @include media-breakpoint-up(sm) {
+      flex: 1 1 51%;
+      padding: 1.6rem 0;
+      border-top: 1px solid $gray-300;
+      
+      &:first-of-type {
+        border-top: 0;
+      }
+    }
+  }
+}

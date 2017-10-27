@@ -59,9 +59,13 @@ body {
   font-family: $font-family-base;
   font-size: $font-size-base;
   font-weight: $font-weight-base;
-  line-height: $line-height-base;
+  line-height: 2rem;
   color: $body-color;
   background-color: $body-bg; // 2
+
+  @include media-breakpoint-up(sm) {
+    font-size: $font-size-base - 0.1;
+  }
 }
 
 // Suppress the focus outline on elements that cannot be accessed via keyboard.

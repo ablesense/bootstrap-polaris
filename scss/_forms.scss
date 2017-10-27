@@ -12,7 +12,7 @@
   // // Make inputs at least the height of their button counterpart (base line-height + padding + border)
   // height: $input-height;
   padding: $input-text-padding-y $input-text-padding-x;
-  font-size: $font-size-base;
+  font-size: $font-size-base + 0.1;
   font-family: inherit;
   font-weight: inherit;
   line-height: $input-text-lineheight;
@@ -23,6 +23,10 @@
   background-clip: padding-box;
   border: $input-btn-border-width solid $input-border-color;
   border-radius: $input-border-radius;
+
+  @include media-breakpoint-up(sm) {
+    font-size: $font-size-base;
+  }
 
   @include box-shadow($input-box-shadow);
   @include transition($input-transition);

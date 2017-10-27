@@ -336,7 +336,7 @@ $font-family-sans-serif: -apple-system, 'BlinkMacSystemFont', 'San Francisco', '
 $font-family-monospace:  Monaco, Consolas, 'Lucida Console', monospace !default;
 $font-family-base:       $font-family-sans-serif !default;
 
-$font-size-base: 1.6rem !default; // Assumes the browser default, typically `16px`
+$font-size-base: 1.5rem !default; // Assumes the browser default, typically `16px`
 $font-size-lg:   1.7rem !default;
 $font-size-sm:   1.4rem !default;
 
@@ -344,7 +344,7 @@ $font-weight-normal: 400 !default;
 $font-weight-bold: 600 !default;
 
 $font-weight-base: $font-weight-normal !default;
-$line-height-base: 1.6 !default;
+$line-height-base: 2 !default;
 
 $h1-font-size: $font-size-base !default;
 $h2-font-size: $font-size-base !default;
