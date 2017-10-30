@@ -4,21 +4,63 @@
 // `background-color`.
 
 .badge {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   padding: $badge-padding-y $badge-padding-x;
+  border: 2px solid $white;
+  background-color: $gray-300;
   font-size: $badge-font-size;
   font-weight: $badge-font-weight;
-  line-height: 1;
+  line-height: 2rem;
   color: $badge-color;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  @include border-radius();
+  border-radius: 2rem;
 
   // Empty badges collapse automatically
   &:empty {
     display: none;
   }
+}
+
+.badge--success {
+  background-color: color(green,light);
+  color: color(green,text);
+}
+.badge--info {
+  background-color: color(blue,light);
+  color: color(blue,text);
+}
+.badge--attention {
+  background-color: color(yellow,light);
+  color: color(yellow,text);
+}
+.badge--warning {
+  background-color: color(orange,light);
+  color: color(orange,text);
+}
+
+.badge__status {
+  height: 1rem;
+  width: 1rem;
+  margin: 0 .4rem 0 -.5rem;
+  border: .2rem solid currentColor;
+  border-radius: 50%;
+  overflow: hidden;
+  color: inherit;
+  font-size: 1px;
+  text-indent: -9999rem;
+}
+
+.badge__status--incomplete {
+  border: .2rem solid currentColor;
+}
+.badge__status--partial {
+  background: linear-gradient(0deg,currentColor,currentColor 50%,transparent 0,transparent);
+}
+.badge__status--complete {
+  background: currentColor;
 }
 
 // Quick fix for badges in buttons
