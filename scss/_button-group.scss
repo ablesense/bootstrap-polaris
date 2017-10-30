@@ -49,7 +49,7 @@
 }
 
 // Set corners individual because sometimes a single button can be in a .btn-group and we need :first-child and :last-child to both match
-.btn-group > .btn:first-child {
+.btn-group:not(.btn-group--spaced) > .btn:first-child {
   margin-left: 0;
 
   &:not(:last-child):not(.dropdown-toggle) {
@@ -57,8 +57,8 @@
   }
 }
 // Need .dropdown-toggle since :last-child doesn't apply given a .dropdown-menu immediately after it
-.btn-group > .btn:last-child:not(:first-child),
-.btn-group > .dropdown-toggle:not(:first-child) {
+.btn-group:not(.btn-group--spaced) > .btn:last-child:not(:first-child),
+.btn-group:not(.btn-group--spaced) > .dropdown-toggle:not(:first-child) {
   @include border-left-radius(0);
 }
 
@@ -69,14 +69,18 @@
 .btn-group > .btn-group:not(:first-child):not(:last-child) > .btn {
   border-radius: 0;
 }
-.btn-group > .btn-group:first-child:not(:last-child) {
+.btn-group > .btn-group:not(.btn-group--spaced):first-child:not(:last-child) {
   > .btn:last-child,
   > .dropdown-toggle {
     @include border-right-radius(0);
   }
 }
-.btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child {
+.btn-group > .btn-group:not(.btn-group--spaced):last-child:not(:first-child) > .btn:first-child {
   @include border-left-radius(0);
+}
+
+.btn-group--spaced > .btn:not(:last-child) {
+  margin-right: 0.8rem;
 }
 
 

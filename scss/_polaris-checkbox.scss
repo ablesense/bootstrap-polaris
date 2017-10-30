@@ -1,0 +1,63 @@
+$check-svg: '%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%20fill-rule%3D%22evenodd%22%20fill%3D%22%235c6ac4%22%3E%3Cpath%20d%3D%22M8.315%2013.859l-3.182-3.417a.506.506%200%200%201%200-.684l.643-.683a.437.437%200%200%201%20.642%200l2.22%202.393%204.942-5.327a.437.437%200%200%201%20.643%200l.643.684a.504.504%200%200%201%200%20.683l-5.91%206.35a.437.437%200%200%201-.642%200%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M8.315%2013.859l-3.182-3.417a.506.506%200%200%201%200-.684l.643-.683a.437.437%200%200%201%20.642%200l2.22%202.393%204.942-5.327a.437.437%200%200%201%20.643%200l.643.684a.504.504%200%200%201%200%20.683l-5.91%206.35a.437.437%200%200%201-.642%200%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fsvg%3E';
+
+.polaris-check {
+  position: relative;
+  display: inline-block;
+  padding: 0.4rem 0;
+}
+
+.polaris-check__check {
+  // appearance: none;
+  position: absolute;
+  top: 0;
+  clip: rect(1px,1px,1px,1px);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  border: 0;
+  // opacity: 0.5;
+}
+
+.polaris-check__span {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  &:before {
+    content: '';
+    display: inline-block;
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-right: 0.8rem;
+    background-color: $white;
+    // linear-gradient(180deg,$white,$gray-100)
+    background-image: url("data:image/svg+xml;utf8,#{$check-svg}"), linear-gradient(180deg,$white,$gray-100);
+    background-image: url("data:image/svg+xml;utf8,#{$check-svg}");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 50% 50%, center;
+    background-size: 1%, 100%;
+    border-radius: 2px;
+    border: 1px solid $gray-400;
+    box-shadow: 0 0 0 1px transparent, 0 1px 0 0 rgba(22,29,37,.05);
+    border-radius: 3px;
+    transition-property: box-shadow, background-size;
+    transition-duration: .2s;
+    transition-timing-function: cubic-bezier(.64,0,.35,1);
+  }
+}
+
+.polaris-check__check:checked + .polaris-check__span {
+  &:before {
+    background-size: 140%, 100%;
+    border-color: $indigo;
+  }
+}
+
+.polaris-check__check:focus + .polaris-check__span {
+  &:before {
+    border-color: $indigo;
+    box-shadow: 0 0 0 1px $indigo, 0 0 0 0 transparent;
+  }
+}
