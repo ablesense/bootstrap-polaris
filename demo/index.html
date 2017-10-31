@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<!--[if IE 9]> <html class="ie9 no-js" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,6 +21,9 @@
       margin: 6rem 0;
     }
   </style>
+  <script type="text/javascript">
+  document.documentElement.className = document.documentElement.className.replace('no-js', 'js') + (document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#BasicStructure", "1.1") ? ' svg' : ' no-svg');
+  </script>
 </head>
 
 <body>
@@ -281,6 +284,28 @@
         </label>
       </li>
     </ul>
+
+    <ul class="list-unstyled">
+      <li>
+        <label for="radio1" class="polaris-radio">
+          <input type="radio" name="custom-radio" id="radio1" class="polaris-radio__radio">
+          <span class="polaris-radio__span">Basic Radio</span>
+        </label>
+      </li>
+      <li>
+        <label for="radio2" class="polaris-radio">
+          <input type="radio" name="custom-radio" id="radio2" class="polaris-radio__radio">
+          <span class="polaris-radio__span">Basic Radio</span>
+        </label>
+      </li>
+      <li>
+        <label for="radio3" class="polaris-radio">
+          <input type="radio" name="custom-radio" id="radio3" class="polaris-radio__radio">
+          <span class="polaris-radio__span">Basic Radio</span>
+        </label>
+      </li>
+    </ul>
+
     <hr>
 
     <h3 class="display-3">Buttons

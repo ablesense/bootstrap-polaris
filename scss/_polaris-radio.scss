@@ -1,0 +1,52 @@
+.polaris-radio {
+  position: relative;
+  display: inline-block;
+  padding: 0.4rem 0;
+}
+
+html:not(.no-svg) .polaris-radio__radio {
+  // appearance: none;
+  position: absolute;
+  top: 0;
+  clip: rect(1px,1px,1px,1px);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  border: 0;
+  // opacity: 0.5;
+}
+
+.polaris-radio__span {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  html:not(.no-svg) &:before {
+    content: '';
+    display: inline-block;
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-right: 0.8rem;
+    background-color: $white;
+    border-radius: 100%;
+    border: 1px solid $gray-400;
+    box-shadow: 0 0 0 1px transparent, 0 1px 0 0 rgba(22,29,37,.05);
+    transition: box-shadow .2s cubic-bezier(.64,0,.35,1);
+  }
+}
+
+.polaris-radio__radio:checked + .polaris-radio__span {
+  &:before {
+    border-color: $indigo;
+  }
+}
+
+.polaris-radio__radio:focus + .polaris-radio__span,
+.polaris-radio__radio:active + .polaris-radio__span {
+  &:before {
+    border-color: $indigo;
+    box-shadow: 0 0 0 1px $indigo, 0 0 0 0 transparent;
+  }
+}
