@@ -1,4 +1,5 @@
-$check-svg: '%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%20fill-rule%3D%22evenodd%22%20fill%3D%22%235c6ac4%22%3E%3Cpath%20d%3D%22M8.315%2013.859l-3.182-3.417a.506.506%200%200%201%200-.684l.643-.683a.437.437%200%200%201%20.642%200l2.22%202.393%204.942-5.327a.437.437%200%200%201%20.643%200l.643.684a.504.504%200%200%201%200%20.683l-5.91%206.35a.437.437%200%200%201-.642%200%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M8.315%2013.859l-3.182-3.417a.506.506%200%200%201%200-.684l.643-.683a.437.437%200%200%201%20.642%200l2.22%202.393%204.942-5.327a.437.437%200%200%201%20.643%200l.643.684a.504.504%200%200%201%200%20.683l-5.91%206.35a.437.437%200%200%201-.642%200%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fsvg%3E';
+$check-svg: '%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20width=%2220%22%20height=%2220%22%20viewBox=%220%200%2020%2020%22%3E%3Cg%20fill=%22#5c6ac4%22%20fill-rule=%22evenodd%22%3E%3Cpath%20d=%22M8.3%2014L5%2010.3a.5.5%200%200%201%200-.6L6%209a.4.4%200%200%201%20.6%200l2.2%202.5%205-5.4a.4.4%200%200%201%20.6%200l.7.8a.5.5%200%200%201%200%20.7L9%2014a.4.4%200%200%201-.7%200%22/%3E%3Cpath%20d=%22M8.3%2014L5%2010.3a.5.5%200%200%201%200-.6L6%209a.4.4%200%200%201%20.6%200l2.2%202.5%205-5.4a.4.4%200%200%201%20.6%200l.7.8a.5.5%200%200%201%200%20.7L9%2014a.4.4%200%200%201-.7%200%22/%3E%3C/g%3E%3C/svg%3E';
+
 
 .polaris-check {
   position: relative;
@@ -34,28 +35,27 @@ $check-svg: '%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width
     background-color: $white;
     // linear-gradient(180deg,$white,$gray-100)
     background-image: url("data:image/svg+xml;utf8,#{$check-svg}"), linear-gradient(180deg,$white,$gray-100);
-    background-image: url("data:image/svg+xml;utf8,#{$check-svg}");
+    // background-image: url("data:image/svg+xml;utf8,#{$check-svg}");
     background-repeat: no-repeat, no-repeat;
-    background-position: 50% 50%, center;
-    background-size: 1%, 100%;
+    background-position: center, center;
+    background-size: 0.5px 0.5px, 100%;
     border-radius: 2px;
     border: 1px solid $gray-400;
     box-shadow: 0 0 0 1px transparent, 0 1px 0 0 rgba(22,29,37,.05);
     border-radius: 3px;
-    transition-property: box-shadow, background-size;
-    transition-duration: .2s;
-    transition-timing-function: cubic-bezier(.64,0,.35,1);
+    transition: box-shadow .2s cubic-bezier(.64,0,.35,1), background-size .1s cubic-bezier(.64,0,.35,1);
   }
 }
 
 .polaris-check__check:checked + .polaris-check__span {
   &:before {
-    background-size: 140%, 100%;
+    background-size: 2rem 2rem, 100%;
     border-color: $indigo;
   }
 }
 
-.polaris-check__check:focus + .polaris-check__span {
+.polaris-check__check:focus + .polaris-check__span,
+.polaris-check__check:active + .polaris-check__span {
   &:before {
     border-color: $indigo;
     box-shadow: 0 0 0 1px $indigo, 0 0 0 0 transparent;
