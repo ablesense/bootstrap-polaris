@@ -5,56 +5,58 @@ $radio-svg: "%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width
   display: inline-block;
   padding: 0.4rem 0;
 
-  html:not(.no-svg):not(.ie9) & > input[type="radio"] {
-    // appearance: none;
-    position: absolute;
-    top: 0;
-    clip: rect(1px,1px,1px,1px);
-    overflow: hidden;
-    height: 1px;
-    width: 1px;
-    padding: 0;
-    border: 0;
-    // opacity: 0.5;
-  }
-  
-  > span {
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    justify-content: flex-start;
-  
-    html:not(.no-svg):not(.ie9) &:before {
-      content: '';
-      display: inline-block;
-      width: 1.6rem;
-      height: 1.6rem;
-      margin-right: 0.8rem;
-      background-color: $white;
-      background-image: url("data:image/svg+xml;utf8,#{$radio-svg}"), linear-gradient(180deg,$white,$gray-100);
-      background-repeat: no-repeat, no-repeat;
-      background-position: center, center;
-      background-size: 0.5px 0.5px, 100%;
-      border-radius: 100%;
-      border: 1px solid $gray-400;
-      box-shadow: 0 0 0 1px transparent, 0 1px 0 0 rgba(22,29,37,.05);
-      transition: box-shadow .2s cubic-bezier(.64,0,.35,1), background-size .1s cubic-bezier(.36,0,1,1);
+  html:not(.no-svg):not(.ie9) & {
+    > input[type="radio"] {
+      // appearance: none;
+      position: absolute;
+      top: 0;
+      clip: rect(1px,1px,1px,1px);
+      overflow: hidden;
+      height: 1px;
+      width: 1px;
+      padding: 0;
+      border: 0;
+      // opacity: 0.5;
     }
-  }
-  
-  html:not(.no-svg):not(.ie9) & > input[type="radio"]:checked + span {
-    &:before {
-      background-color: $indigo;
-      background-size: 1.6rem 1.6rem, 100%;
-      border-color: $indigo;
+    
+    > span {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: flex-start;
+    
+      &:before {
+        content: '';
+        display: inline-block;
+        width: 1.6rem;
+        height: 1.6rem;
+        margin-right: 0.8rem;
+        background-color: $white;
+        background-image: url("data:image/svg+xml;utf8,#{$radio-svg}"), linear-gradient(180deg,$white,$gray-100);
+        background-repeat: no-repeat, no-repeat;
+        background-position: center, center;
+        background-size: 0.5px 0.5px, 100%;
+        border-radius: 100%;
+        border: 1px solid $gray-400;
+        box-shadow: 0 0 0 1px transparent, 0 1px 0 0 rgba(22,29,37,.05);
+        transition: box-shadow .2s cubic-bezier(.64,0,.35,1), background-size .1s cubic-bezier(.36,0,1,1);
+      }
     }
-  }
-  
-  html:not(.no-svg):not(.ie9) & > input[type="radio"]:focus + span,
-  html:not(.no-svg):not(.ie9) & > input[type="radio"]:active + span {
-    &:before {
-      border-color: $indigo;
-      box-shadow: 0 0 0 1px $indigo, 0 0 0 0 transparent;
+    
+    > input[type="radio"]:checked + span {
+      &:before {
+        background-color: $indigo;
+        background-size: 1.6rem 1.6rem, 100%;
+        border-color: $indigo;
+      }
+    }
+    
+    > input[type="radio"]:focus + span,
+    > input[type="radio"]:active + span {
+      &:before {
+        border-color: $indigo;
+        box-shadow: 0 0 0 1px $indigo, 0 0 0 0 transparent;
+      }
     }
   }
 }
