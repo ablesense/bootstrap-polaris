@@ -47,3 +47,42 @@
 .text-hide {
   @include text-hide();
 }
+
+.lead {
+  font-size: $lead-font-size;
+  font-weight: $lead-font-weight;
+}
+
+// Type display classes
+.display-1 {
+  font-size: $display1-size;
+  font-weight: $display1-weight;
+  line-height: $display1-line-height;
+}
+.display-2 {
+  font-size: $display2-size;
+  font-weight: $display2-weight;
+  line-height: $display2-line-height;
+}
+.display-3 {
+  font-size: $display3-size;
+  font-weight: $display3-weight;
+  line-height: $display3-line-height;
+}
+.display-4 {
+  font-size: $display4-size;
+  font-weight: $display4-weight;
+  line-height: $display4-line-height;
+}
+
+.polaris-heading {
+  @include polaris-header;
+}
+
+.positive {
+  color: color(green, dark);
+}
+
+.negative {
+  color: color(red, dark);
+}
