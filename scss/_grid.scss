@@ -36,8 +36,8 @@
     margin-right: 0;
     margin-left: 0;
 
-    > .col:not(.card-anotation),
-    > [class*="col-"]:not(.card-anotation) {
+    > .col:not(.card-annotation),
+    > [class*="col-"]:not(.card-annotation) {
       padding-right: 0;
       padding-left: 0;
     }
