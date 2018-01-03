@@ -21,6 +21,19 @@
   }
 }
 
+// Left container
+//
+// Set the container width, and override it for fixed navbars in media queries, 
+// but be left aligned
+
+@if $enable-grid-classes {
+  .container-left {
+    @include make-container();
+    @include make-container-max-widths();
+    margin-left: 1rem;
+  }
+}
+
 // Row
 //
 // Rows contain and clear the floats of your columns.
