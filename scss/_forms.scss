@@ -88,6 +88,11 @@ select.form-control {
     color: $input-color;
     background-color: $input-bg;
   }
+  
+  // Hides the default caret in IE11
+  &::-ms-expand {
+    opacity: 0;
+  }
 }
 
 // Make file inputs better match text inputs by forcing them to new lines.
