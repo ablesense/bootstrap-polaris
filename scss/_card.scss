@@ -16,7 +16,7 @@
   @include border-radius($card-border-radius);
 }
 
-.card-anotation {
+.card-annotation {
   padding: 2rem;
 
   @include media-breakpoint-up(sm) {
