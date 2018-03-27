@@ -4,6 +4,7 @@
 // and disabled options for all buttons
 
 @mixin button-variant($background, $border, $active-background: $border, $active-border: darken($border, 5%)) {
+  fill: general-color-yiq($background);
   @include color-yiq($background);
   background-color: $background;
   @include gradient-y(lighten($background, 2%), darken($background, 2%));
@@ -60,7 +61,7 @@
   background-color: transparent;
   background-image: none;
   border-color: rgba($border-color, 0.4);
-  fill: $color;
+  fill: general-color-yiq($color, rgba($color, 0.4), $color);
 
   @include hover {
     color: darken($color, 10%);

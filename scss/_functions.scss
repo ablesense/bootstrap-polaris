@@ -63,6 +63,20 @@
   }
 }
 
+@function general-color-yiq($color, $lightest: #fff, $darkest: #111) {
+  $r: red($color);
+  $g: green($color);
+  $b: blue($color);
+
+  $yiq: (($r * 299) + ($g * 587) + ($b * 114)) / 1000;
+
+  @if ($yiq >= 150) {
+    @return $darkest;
+  } @else {
+    @return $lightest;
+  }
+}
+
 // Retreive color Sass maps
 @function color($key: "blue") {
   @return map-get($colors, $key);
