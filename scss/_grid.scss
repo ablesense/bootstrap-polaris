@@ -56,8 +56,8 @@
     }
   }
 
-  [class*="col-"].card {
-    margin-bottom: 0;
+  [class*="col-"].card + [class*="col-"].card {
+    margin-top: 0;
   }
 }
 

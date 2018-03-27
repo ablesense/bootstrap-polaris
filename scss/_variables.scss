@@ -76,7 +76,7 @@ $blue:    #007ace !default;
 $indigo:  #5c6ac4 !default;
 $purple:  #9c6ade !default;
 $pink:    #e83e8c !default;
-$red:     #ed6347 !default;
+$red:     #DE3618 !default;
 $orange:  #f49342 !default;
 $yellow:  #eec200 !default;
 $green:   #50b83c !default;
@@ -163,7 +163,7 @@ $color-palette-data: (
   red: (
     lighter: #fbeae5,
     light: #fead9a,
-    base: #ed6347,
+    base: #DE3618,
     dark: #bf0711,
     darker: #330101,
     text: #583c35
@@ -199,7 +199,7 @@ $color-palette-data: (
 
 $theme-colors: (
   primary: $indigo,
-  secondary: $gray-300,
+  secondary: $gray-600,
   success: $green,
   info: $cyan,
   warning: $yellow,
@@ -431,7 +431,7 @@ $input-btn-padding-x:       1.6rem !default;
 $input-btn-line-height:     1.6 !default;
 
 $input-btn-padding-y-sm:    0.4rem !default;
-$input-btn-padding-x-sm:    1.6rem !default;
+$input-btn-padding-x-sm:    1.2rem !default;
 $input-btn-line-height-sm:  1.5 !default;
 
 $input-btn-padding-y-lg:    1.1rem !default;
