@@ -78,9 +78,9 @@
 }
 
 // Retreive color Sass maps
-@function color($key: "blue") {
-  @return map-get($colors, $key);
-}
+// @function color($key: "blue") {
+//   @return map-get($colors, $key);
+// }
 
 @function theme-color($key: "primary") {
   @return map-get($theme-colors, $key);

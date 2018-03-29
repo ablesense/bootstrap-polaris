@@ -109,13 +109,15 @@ fieldset[disabled] a.btn {
 //
 
 // Make a button look and behave like a link
-.btn-link {
+.btn-link, .btn-link-gray {
   font-weight: $font-weight-normal;
   padding-right: 0.8rem;
   padding-left: 0.8rem;
   color: $link-color;
+  fill: $link-color;
   border-radius: 0;
   background: transparent;
+  text-decoration: none;
 
   &,
   &:active,
@@ -134,6 +136,8 @@ fieldset[disabled] a.btn {
   @include hover {
     border-color: transparent;
     background: none;
+    color: $link-hover-color;
+    fill: $link-hover-color;
   }
   @include hover-focus {
     color: $link-hover-color;
@@ -146,6 +150,15 @@ fieldset[disabled] a.btn {
     @include hover-focus {
       text-decoration: none;
     }
+  }
+}
+
+.btn-link-gray {
+  color: $gray-600;
+  fill: $gray-600;
+
+  &:hover {
+    color: $gray-700;
   }
 }
 
