@@ -3,22 +3,32 @@
 // Generate semantic grid columns with these mixins.
 
 @mixin make-container() {
+  width: 100%;
+  max-width: map-get($container-max-widths, xl);
   margin-right: auto;
   margin-left: auto;
-  padding-right: ($grid-gutter-width / 2);
-  padding-left:  ($grid-gutter-width / 2);
-  width: 100%;
+  padding-right: 1.6rem;
+  padding-left:  1.6rem;
+
+  @include media-breakpoint-up(md) {
+    padding-right: 2rem;
+    padding-left:  2rem;
+  }
+  @include media-breakpoint-up(lg) {
+    padding-right: 3.2rem;
+    padding-left:  3.2rem;
+  }
 }
 
 
 // For each breakpoint, define the maximum width of the container in a media query
-@mixin make-container-max-widths($max-widths: $container-max-widths, $breakpoints: $grid-breakpoints) {
-  @each $breakpoint, $container-max-width in $max-widths {
-    @include media-breakpoint-up($breakpoint, $breakpoints) {
-      max-width: $container-max-width;
-    }
-  }
-}
+// @mixin make-container-max-widths($max-widths: $container-max-widths, $breakpoints: $grid-breakpoints) {
+//   @each $breakpoint, $container-max-width in $max-widths {
+//     @include media-breakpoint-up($breakpoint, $breakpoints) {
+//       max-width: $container-max-width;
+//     }
+//   }
+// }
 
 @mixin make-row() {
   display: flex;

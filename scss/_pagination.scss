@@ -8,26 +8,37 @@
 }
 
 .page-item {
+  > .btn {
+    position: relative;
+    display: block;
+    margin-left: -1px;
+    padding: $pagination-padding-y $pagination-padding-x;
+    border-radius: 0;
+    line-height: $pagination-line-height;
+    fill: $gray-600;
+    z-index: 10;
+  }
+
   &:first-child {
-    .page-link {
+    .btn {
       margin-left: 0;
       @include border-left-radius($border-radius);
     }
   }
   &:last-child {
-    .page-link {
+    .btn {
       @include border-right-radius($border-radius);
     }
   }
 
-  &.active .page-link {
+  &.active .btn {
     z-index: 2;
     color: $pagination-active-color;
     background-color: $pagination-active-bg;
     border-color: $pagination-active-border-color;
   }
 
-  &.disabled .page-link {
+  &.disabled .btn {
     color: $pagination-disabled-color;
     pointer-events: none;
     background-color: $pagination-disabled-bg;
@@ -37,39 +48,39 @@
   }
 }
 
-.page-link {
-  position: relative;
-  display: block;
-  padding: $pagination-padding-y $pagination-padding-x;
-  margin-left: -1px;
-  line-height: $pagination-line-height;
-  color: $pagination-color;
-  @include gradient-directional($white, $pagination-bg, 180deg);
-  border: $pagination-border-width solid $pagination-border-color;
-  fill: $gray-600;
-  z-index: 10;
-  text-decoration: none;
-  cursor: pointer;
-  user-select: none;
-  box-shadow: 0 0 0 0 transparent;
-  transition: box-shadow 0.2s cubic-bezier(.64,0,.35,1),
-              border-color 0.2s cubic-bezier(.64,0,.35,1),
-              background 0.2s cubic-bezier(.64,0,.35,1),
-              color 0.2s cubic-bezier(.64,0,.35,1);
+// .page-link {
+//   position: relative;
+//   display: block;
+//   padding: $pagination-padding-y $pagination-padding-x;
+//   margin-left: -1px;
+//   line-height: $pagination-line-height;
+//   color: $pagination-color;
+//   @include gradient-directional($white, $pagination-bg, 180deg);
+//   border: $pagination-border-width solid $pagination-border-color;
+//   fill: $gray-600;
+//   z-index: 10;
+//   text-decoration: none;
+//   cursor: pointer;
+//   user-select: none;
+//   box-shadow: 0 0 0 0 transparent;
+//   transition: box-shadow 0.2s cubic-bezier(.64,0,.35,1),
+//               border-color 0.2s cubic-bezier(.64,0,.35,1),
+//               background 0.2s cubic-bezier(.64,0,.35,1),
+//               color 0.2s cubic-bezier(.64,0,.35,1);
 
-  &:focus {
-    text-decoration: none;
-    z-index: 20;
-    border-color: $indigo;
-    outline: 0;
-    box-shadow: 0 0 0 1px $indigo;
-  }
-  &:active {
-    @include gradient-directional($pagination-bg, $pagination-bg, 180deg);
-    border-color: #c4cdd5;
-    box-shadow: 0 0 0 0 transparent, inset 0 1px 1px 0 rgba($gray-900,.1), inset 0 1px 4px 0 rgba($gray-900,.2);
-  }
-}
+//   &:focus {
+//     text-decoration: none;
+//     z-index: 20;
+//     border-color: $indigo;
+//     outline: 0;
+//     box-shadow: 0 0 0 1px $indigo;
+//   }
+//   &:active {
+//     @include gradient-directional($pagination-bg, $pagination-bg, 180deg);
+//     border-color: #c4cdd5;
+//     box-shadow: 0 0 0 0 transparent, inset 0 1px 1px 0 rgba($gray-900,.1), inset 0 1px 4px 0 rgba($gray-900,.2);
+//   }
+// }
 
 
 //

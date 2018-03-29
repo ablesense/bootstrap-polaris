@@ -1,0 +1,188 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bootstrap Polaris</title>
+  <link rel="stylesheet" href="bootstrap-polaris.min.css">
+  <script type="text/javascript">
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js') + (document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#BasicStructure", "1.1") ? ' svg' : ' no-svg');
+  </script>
+</head>
+<body>
+  <main class="container">
+
+
+    <div class="row no-gutters">
+      <header class="page-header">
+        <nav class="page-header__navigation">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link btn btn-link-gray" href="#">
+                <span class="polaris-icon">
+                  <svg class="polaris-icon__svg" viewBox="0 0 20 20">
+                    <path d="M17 9H5.414l3.293-3.293a.999.999 0 1 0-1.414-1.414l-5 5a.999.999 0 0 0 0 1.414l5 5a.997.997 0 0 0 1.414 0 .999.999 0 0 0 0-1.414L5.414 11H17a1 1 0 1 0 0-2"
+                      fill-rule="evenodd"></path>
+                  </svg>
+                </span>
+                <span class="sr-only">Previous</span>
+              </a>
+            </li>
+            <li class="page-item">
+              <a class="page-link btn btn-link-gray" href="#">
+                <span class="polaris-icon">
+                  <svg class="polaris-icon__svg" viewBox="0 0 20 20">
+                    <path d="M17.707 9.293l-5-5a.999.999 0 1 0-1.414 1.414L14.586 9H3a1 1 0 1 0 0 2h11.586l-3.293 3.293a.999.999 0 1 0 1.414 1.414l5-5a.999.999 0 0 0 0-1.414"
+                      fill-rule="evenodd"></path>
+                  </svg>
+                </span>
+                <span class="sr-only">Next</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="page-header__content">
+
+        </div>
+        <div class="page-header__actions">
+
+        </div>
+      </header>
+
+      <div class="banner banner--success">
+        <div class="banner__ribbon">
+          <span class="polaris-icon polaris-icon__has-backdrop">
+            <svg class="polaris-icon__svg" viewBox="0 0 20 20">
+              <g fill-rule="evenodd">
+                <circle fill="currentColor" cx="10" cy="10" r="9"></circle>
+                <path d="M10 0C4.486 0 0 4.486 0 10s4.486 10 10 10 10-4.486 10-10S15.514 0 10 0m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m2.293-10.707L9 10.586 7.707 9.293a1 1 0 1 0-1.414 1.414l2 2a.997.997 0 0 0 1.414 0l4-4a1 1 0 1 0-1.414-1.414"></path>
+              </g>
+            </svg>
+          </span>
+        </div>
+        <div>
+          <h3>Product has been created</h3>
+          <p>This product is now live on your store.</p>
+          <a href="#" class="btn btn-outline">View</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-body">
+            <div class="form-group">
+              <label class="col-form-label" for="formGroupExampleInput">Title</label>
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Awesome Product">
+            </div>
+            <div class="form-group">
+              <label class="col-form-label" for="description">Description</label>
+              <textarea class="form-control" name="description" id="description" rows="10"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h3>Pricing</h3>
+            <div class="row">
+              <div class="col">
+               <div class="form-group">
+                  <label class="col-form-label" for="price">Price</label>
+                  <input type="number" class="form-control" id="price" placeholder="$">
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-group">
+                  <label class="col-form-label" for="compare">Compare At Price</label>
+                  <input type="number" class="form-control" id="compare" placeholder="$">
+                </div>
+              </div>
+            </div>
+
+            <label for="check1" class="polaris-check">
+              <input type="checkbox" name="check1" id="check1">
+              <span>Charge taxes on this product</span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h3>Sales channels</h3>
+          </div>
+          <div class="card-body">
+            <p>Online Store</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body card-body--muted">
+            <h3>Actions</h3>
+            <p>There are five tiers to the Bootstrap grid system, one for each range of devices we support. Each tier starts at a minimum</p>
+            <label for="select">Select</label>
+            <select name="select" id="select" class="form-control" aria-describedby="selectHelp">
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+              <option value="4">Four</option>
+            </select>
+
+            <p>There are five tiers to the Bootstrap grid system.</p>
+
+            <ul class="list-unstyled">
+              <li>
+                <label for="radio1" class="polaris-radio">
+                  <input type="radio" name="custom-radio" id="radio1">
+                  <span>Basic Radio</span>
+                </label>
+              </li>
+              <li>
+                <label for="radio2" class="polaris-radio">
+                  <input type="radio" name="custom-radio" id="radio2">
+                  <span>Basic Radio</span>
+                </label>
+              </li>
+              <li>
+                <label for="radio3" class="polaris-radio">
+                  <input type="radio" name="custom-radio" id="radio3">
+                  <span>Basic Radio</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body card-body--muted">
+            <div class="form-group">
+              <label class="col-form-label" for="searchCollections">Collections</label>
+              <input type="search" class="form-control" id="searchCollections" placeholder="Search for Collections">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="page-actions">
+      <div class="btn-group btn-group--spaced" role="group" aria-label="Product Actions">
+        <button type="button" class="btn btn-danger">Delete Product</button>
+        <button type="button" class="btn btn-primary">Save</button>
+      </div>
+    </footer>
+
+    <div class="footer-help">
+      <div class="footer-help__content">
+        <div class="footer-help__icon">
+          <span class="polaris-icon polaris-icon__has-backdrop">
+            <svg class="polaris-icon__svg" viewBox="0 0 20 20">
+              <circle cx="10" cy="10" r="9" fill="currentColor"></circle>
+              <path d="M10 0C4.486 0 0 4.486 0 10s4.486 10 10 10 10-4.486 10-10S15.514 0 10 0m0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8m0-4a1 1 0 1 0 0 2 1 1 0 1 0 0-2m0-10C8.346 4 7 5.346 7 7a1 1 0 1 0 2 0 1.001 1.001 0 1 1 1.591.808C9.58 8.548 9 9.616 9 10.737V11a1 1 0 1 0 2 0v-.263c0-.653.484-1.105.773-1.317A3.013 3.013 0 0 0 13 7c0-1.654-1.346-3-3-3"></path>
+            </svg>
+          </span>
+        </div>
+        <p>Learn more about
+          <a class="Polaris-Link" href="#" data-polaris-unstyled="true">products</a>.</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

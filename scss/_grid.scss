@@ -5,7 +5,7 @@
 @if $enable-grid-classes {
   .container {
     @include make-container();
-    @include make-container-max-widths();
+    // @include make-container-max-widths();
   }
 }
 
@@ -29,7 +29,7 @@
 @if $enable-grid-classes {
   .container-left {
     @include make-container();
-    @include make-container-max-widths();
+    // @include make-container-max-widths();
     margin-left: 1rem;
   }
 }

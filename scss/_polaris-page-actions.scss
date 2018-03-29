@@ -1,0 +1,23 @@
+.page-actions {
+  margin: 2rem -1.6rem;
+  padding: 1.6rem;
+  border-top: solid 1px rgba(0,0,0,0.1);
+
+  .btn-group {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @include media-breakpoint-up(md) {
+    margin-right: -2rem;
+    margin-left:  -2rem;
+    padding-right: 2rem;
+    padding-left:  2rem;
+  }
+  @include media-breakpoint-up(lg) {
+    margin-right: -3.2rem;
+    margin-left:  -3.2rem;
+    padding-right: 3.2rem;
+    padding-left:  3.2rem;
+  }
+}
