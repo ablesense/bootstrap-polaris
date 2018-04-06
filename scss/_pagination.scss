@@ -15,7 +15,6 @@
     padding: $pagination-padding-y $pagination-padding-x;
     border-radius: 0;
     line-height: $pagination-line-height;
-    fill: $gray-600;
     z-index: 10;
   }
 
@@ -36,15 +35,6 @@
     color: $pagination-active-color;
     background-color: $pagination-active-bg;
     border-color: $pagination-active-border-color;
-  }
-
-  &.disabled .btn {
-    color: $pagination-disabled-color;
-    pointer-events: none;
-    background-color: $pagination-disabled-bg;
-    background-image: none;
-    border-color: $pagination-disabled-border-color;
-    fill: $gray-500;
   }
 }
 

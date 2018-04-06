@@ -50,6 +50,7 @@
   &:disabled {
     cursor: not-allowed;
     color: $gray-500;
+    fill: $gray-500;
     background-color: $gray-200;
     background-image: none;
     @include box-shadow(none);
@@ -122,6 +123,7 @@ fieldset[disabled] a.btn {
   &,
   &:active,
   &.active,
+  &.disabled,
   &:disabled {
     background-color: transparent;
     @include box-shadow(none);
@@ -144,8 +146,10 @@ fieldset[disabled] a.btn {
     text-decoration: $link-hover-decoration;
     background-color: transparent;
   }
+  &.disabled,
   &:disabled {
     color: $btn-link-disabled-color;
+    fill: $gray-400;
 
     @include hover-focus {
       text-decoration: none;
