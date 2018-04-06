@@ -57,6 +57,11 @@
     }
   }
 
+  .no-margins {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
   [class*="col-"].card + [class*="col-"].card {
     margin-top: 0;
   }

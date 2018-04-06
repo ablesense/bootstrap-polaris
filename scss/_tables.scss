@@ -16,7 +16,12 @@
     font-size: 1.6rem;
   
     @include media-breakpoint-up(sm) {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
+    }
+
+    .polaris-check {
+      margin: 0;
+      padding: 0;
     }
   }
 
@@ -44,28 +49,8 @@ th {
   }
 
   &.sort {
-    padding: 0;
-  
-    > a {
-      display: block;
-      padding: $table-cell-padding;
-      border-bottom: .3rem solid transparent;
-      color: $gray-600;
-      font-weight: 300;
-      text-align: center;
-      text-decoration: none;
-      transition: border-color 0.2;
-  
-      &:hover {
-        border-color: $gray-300;
-        color: $gray-900;
-      }
-  
-      &.active {
-        border-color: $indigo;
-        font-weight: 400;
-      }
-    }
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 

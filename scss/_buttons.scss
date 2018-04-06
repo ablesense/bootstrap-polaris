@@ -74,6 +74,11 @@
     margin: auto;
     margin-left: -0.4rem;
     margin-right: 0.4rem;
+
+    &.icon-right {
+      margin-left: 0.4rem;
+      margin-right: -0.4rem;
+    }
   }
 }
 
@@ -110,7 +115,7 @@ fieldset[disabled] a.btn {
 //
 
 // Make a button look and behave like a link
-.btn-link, .btn-link-gray {
+.btn-link, .btn-link-gray, .btn-link-sort {
   font-weight: $font-weight-normal;
   padding-right: 0.8rem;
   padding-left: 0.8rem;
@@ -163,6 +168,24 @@ fieldset[disabled] a.btn {
 
   &:hover {
     color: $gray-700;
+  }
+}
+
+.btn-link-sort {
+  padding-right: 0;
+  padding-left: 0;
+  color: $gray-900;
+  fill: $gray-900;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+
+  @include media-breakpoint-up(sm) {
+    font-size: 1.5rem;
+  }
+
+  &:hover {
+    color: $indigo;
   }
 }
 

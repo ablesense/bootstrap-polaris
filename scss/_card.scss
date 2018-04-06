@@ -59,12 +59,21 @@
 
   
 }
+.card-header-actions + .card-body,
 .card-body + .card-body {
   border-top: 1px solid $gray-300;
 }
 
 .card-body--muted {
   background-color: $gray-100;
+}
+
+.card-body-section {
+  padding-bottom: 2rem;
+
+  &:last-of-type {
+    padding-bottom: 0;
+  }
 }
 
 .card-action {
@@ -139,6 +148,11 @@
   }
 }
 
+.card-header-actions {
+  padding: 0;
+  margin-bottom: 0; // Removes the default margin-bottom of <hN>
+}
+
 .card-footer {
   padding: $card-spacer-y $card-spacer-x;
   background-color: $card-cap-bg;
@@ -155,41 +169,36 @@
 //
 
 .card-header-tabs {
-  margin-right: -($card-spacer-x / 2);
-  margin-bottom: -$card-spacer-y;
-  margin-left: -($card-spacer-x / 2);
-  border-bottom: 0;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.card-header-pills {
-  margin-right: -($card-spacer-x / 2);
-  margin-left: -($card-spacer-x / 2);
-}
+.card-header-tab {
+  display: inline-block;
+  margin-left: 1.6rem;
 
-// Card image
-.card-img-overlay {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: $card-img-overlay-padding;
-}
+  > a {
+    display: block;
+    padding: 1.6rem 0;
+    color: $gray-600;
+    border-bottom: solid 3px transparent;
 
-.card-img {
-  width: 100%; // Required because we use flexbox and this inherently applies align-self: stretch
-  @include border-radius($card-inner-border-radius);
-}
+    &:hover {
+      color: $gray-900;
+      border-color: $gray-400;
+    }
 
-// Card image caps
-.card-img-top {
-  width: 100%; // Required because we use flexbox and this inherently applies align-self: stretch
-  @include border-top-radius($card-inner-border-radius);
-}
+    &.active {
+      color: $gray-900;
+      border-color: $indigo;
 
-.card-img-bottom {
-  width: 100%; // Required because we use flexbox and this inherently applies align-self: stretch
-  @include border-bottom-radius($card-inner-border-radius);
+      &:hover {
+        border-color: $indigo;
+      }
+    }
+  }
 }
 
 
