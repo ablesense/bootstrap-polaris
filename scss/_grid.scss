@@ -74,3 +74,19 @@
 @if $enable-grid-classes {
   @include make-grid-columns();
 }
+
+// Flex-align helpers
+//
+// Align the content of a grid column
+
+.col-align-self-top {
+  align-self: flex-start;
+}
+
+.col-align-self-bottom {
+  align-self: flex-end;
+}
+
+.col-align-self-center {
+  align-self: center;
+}
