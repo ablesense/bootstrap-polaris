@@ -33,6 +33,13 @@
   }
 }
 
+.btn-group.btn-group--reverse {
+  flex-direction: row-reverse;
+}
+.btn-group-vertical.btn-group--reverse {
+  flex-direction: column-reverse;
+}
+
 // Optional: Group multiple button groups together for a toolbar
 .btn-toolbar {
   display: flex;
