@@ -20,4 +20,23 @@
     padding-right: 3.2rem;
     padding-left:  3.2rem;
   }
+
+  &.page-actions--no-border {
+    margin: 0 0 2rem;
+    padding: 1.6rem 0;
+    border-top: 0;
+
+    @include media-breakpoint-up(md) {
+      margin-right: 0;
+      margin-left: 0;
+      padding-right: 0;
+      padding-left: 0;
+    }
+    @include media-breakpoint-up(lg) {
+      margin-right: 0;
+      margin-left: 0;
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
 }
