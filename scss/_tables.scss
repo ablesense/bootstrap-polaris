@@ -113,6 +113,14 @@ th {
   }
 }
 
+// Row Active
+//
+// A stronger highlight than hover
+
+.table tbody tr.row-active {
+  background-color: $table-active-bg;
+}
+
 
 // Table backgrounds
 //

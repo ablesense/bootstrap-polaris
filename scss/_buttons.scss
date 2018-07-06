@@ -82,6 +82,15 @@
   }
 }
 
+.btn.btn--icon {
+  padding: 0.7rem 0.7rem;
+  
+  > .polaris-icon__svg {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 .btn-outline {
   @include button-outline-variant($gray-900, $gray-600);
 }

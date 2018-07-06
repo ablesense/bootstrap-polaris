@@ -286,6 +286,32 @@
       </div>
     </div>
 
+    <div class="row no-gutters">
+      <div class="col-md-4 card-annotation">
+        <h3>Form Components</h3>
+      </div>
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-body">
+            <form>
+              <div class="quantity-selector">
+                <button type="button" class="btn btn--icon quantity-selector__subtract js">
+                  <svg class="polaris-icon__svg" viewBox="0 0 20 20"><path d="M15 9H5a1 1 0 1 0 0 2h10a1 1 0 1 0 0-2" fill-rule="evenodd"></path></svg>
+                  <spane class="sr-only">Subtract</spane>
+                </button>
+                <input type="number" class="form-control quantity-selector__input" value="0" min="0" max="5">
+                <button type="button" class="btn btn--icon quantity-selector__add js">
+                  <svg class="polaris-icon__svg" viewBox="0 0 20 20"><path d="M17 9h-6V3a1 1 0 1 0-2 0v6H3a1 1 0 1 0 0 2h6v6a1 1 0 1 0 2 0v-6h6a1 1 0 1 0 0-2" fill-rule="evenodd"></path></svg>
+                  <spane class="sr-only">Add</spane>
+                </button>
+                <button type="button" class="btn btn-primary">Redeem</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <hr>
 
     <h3 class="display-3">Polaris Checkboxes and Radio Buttons</h3>
@@ -1146,6 +1172,8 @@
     <hr>
 
   </main>
+
+  <script src="bootstrap-polaris.js"></script>
 </body>
 
 </html>
