@@ -38,15 +38,17 @@
   }
 }
 
-.card-body, .card-title {
+.card-body, .card-title, .card-prompt {
   // Enable `flex-grow: 1` for decks and groups so that card blocks take up
   // as much space as possible, ensuring footers are aligned to the bottom.
   flex: 1 1 auto;
   padding: $card-spacer-x;
 
-  p, .card-scrollable {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+  img {
+    display: block;
+    width: 55%;
+    height: auto;
+    margin: 1.6rem 0;
 
     &:first-child {
       margin-top: 0;
@@ -55,6 +57,32 @@
     &:last-child {
       margin-bottom: 0;
     }
+  }
+}
+
+.card-body, .card-title {
+  p, .card-scrollable {
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.card-prompt {
+  max-width: 50.5rem;
+  margin: 0 auto;
+  text-align: center;
+
+  img {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -75,14 +103,21 @@
   }
 }
 
-.card-action {
+.card-action,
+.card-action-start,
+.card-action-center,
+.card-action-end {
   display: flex;
-  justify-content: flex-end;
   // Enable `flex-grow: 1` for decks and groups so that card blocks take up
   // as much space as possible, ensuring footers are aligned to the bottom.
   flex: 1 1 auto;
-  padding: $card-spacer-x;
+  padding: 0 $card-spacer-x $card-spacer-x;
 }
+
+.card-action { justify-content: flex-end; }
+.card-action-start { justify-content: flex-start; }
+.card-action-center { justify-content: center; }
+.card-action-end { justify-content: flex-end; }
 
 .card-title {
   // margin-bottom: $card-spacer-y;

@@ -27,22 +27,24 @@
   @include hover-focus {
     text-decoration: none;
   }
+
+  &:hover, &:visited:hover {
+    @include gradient-y($gray-100, $gray-200);
+    border-color: $gray-400;
+    color: $gray-900;
+  }
+
   &:focus,
   &.focus {
     outline: 0;
     border-color: $indigo;
-    @include box-shadow($btn-focus-box-shadow);
-  }
-
-  &:hover {
-    @include gradient-y($gray-100, $gray-200);
-    border-color: $gray-400;
+    box-shadow: $btn-focus-box-shadow;
   }
 
   &:active,
   &.active {
     background-image: none;
-    @include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
+    box-shadow: $btn-focus-box-shadow, $btn-active-box-shadow;
   }
 
   // Disabled comes first so active can properly restyle
@@ -53,7 +55,7 @@
     fill: $gray-500;
     background-color: $gray-200;
     background-image: none;
-    @include box-shadow(none);
+    box-shadow: none;
 
     &:hover,
     &:focus,
@@ -63,7 +65,8 @@
       outline: 0;
       background-image: none;
       border-color: $gray-400;
-      @include box-shadow(none);
+      color: $gray-500;
+      box-shadow: none;
     }
   }
 
@@ -140,7 +143,7 @@ fieldset[disabled] a.btn {
   &.disabled,
   &:disabled {
     background-color: transparent;
-    @include box-shadow(none);
+    box-shadow: none;
   }
   &,
   &:focus,
