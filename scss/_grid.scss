@@ -44,6 +44,16 @@
     @include make-row();
   }
 
+  .col-grid {
+    @include make-row();
+
+    > .col:not(.card-annotation),
+    > [class*="col-"]:not(.card-annotation) {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+  }
+
   // Remove the negative margin from default .row, then the horizontal padding
   // from all immediate children columns (to prevent runaway style inheritance).
   .no-gutters {
