@@ -40,13 +40,12 @@
 // Rows contain and clear the floats of your columns.
 
 @if $enable-grid-classes {
-  .row {
+  .row,
+  .col-grid {
     @include make-row();
   }
 
   .col-grid {
-    @include make-row();
-
     > .col:not(.card-annotation),
     > [class*="col-"]:not(.card-annotation) {
       padding-top: 1rem;
