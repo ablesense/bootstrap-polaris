@@ -1,0 +1,26 @@
+.avatar {
+  position: relative;
+  display: block;
+  width: 3.2rem;
+  height: 3.2rem;
+  background-color: $teal;
+  border-radius: 50%;
+  user-select: none;
+  overflow: hidden;
+
+  > img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+
+  &.avatar--medium {
+    width: 4rem;
+    height: 4rem;
+  }
+  &.avatar--large {
+    width: 6rem;
+    height: 6rem;
+  }
+}
