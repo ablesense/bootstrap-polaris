@@ -11,7 +11,7 @@
   border-color: $border;
   // box-shadow: 0 0 0 0 transparent,inset 0 1px 1px 0 lighten($background, 5%),inset 0 1px 4px 0 rgba($gray-900,0.2);
 
-  &:hover {
+  &:hover, &:visited:hover {
     @include color-yiq($active-background);
     // background-color: $active-background;
     @include gradient-y($background, darken($background, 5%));
