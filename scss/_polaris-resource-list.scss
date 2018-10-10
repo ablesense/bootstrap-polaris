@@ -34,3 +34,17 @@
   min-width: 0;
   max-width: 100%;
 }
+
+.resource-list__header {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0.4rem 1.6rem;
+  border-bottom: solid 1px $gray-300;
+  background-color: $gray-200;
+  font-size: 1.2rem;
+
+  @include media-breakpoint-up(sm) {
+    padding: 0.4rem 2rem;
+  }
+}

@@ -28,6 +28,14 @@
   .btn {
     margin-top: 1.5rem;
   }
+
+  .col-grid [class*="col-"] &:first-child {
+    margin-top: 0;
+  }
+
+  .col-grid [class*="col-"] &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .banner--success {

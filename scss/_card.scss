@@ -21,10 +21,14 @@
 }
 
 .card-annotation {
-  padding: 2rem;
+  padding-right: 2rem;
 
-  @include media-breakpoint-up(sm) {
-    padding: 2rem 2rem 2rem 0;
+  .row.no-gutters & {
+    padding: 2rem;
+  
+    @include media-breakpoint-up(sm) {
+      padding: 2rem 2rem 2rem 0;
+    }
   }
 
   p {
