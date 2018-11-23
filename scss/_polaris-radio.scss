@@ -16,6 +16,13 @@ $radio-svg: "%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width
       width: 1px;
       padding: 0;
       border: 0;
+
+      &:disabled {
+        + span {
+          pointer-events: none;
+          opacity: 0.5;
+        }
+      }
     }
     
     > span {
@@ -23,6 +30,7 @@ $radio-svg: "%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width
       display: inline-flex;
       align-items: center;
       justify-content: flex-start;
+      transition: opacity 0.2s;
     
       &:before {
         content: '';
@@ -55,6 +63,14 @@ $radio-svg: "%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width
       &:before {
         border-color: $indigo;
         box-shadow: 0 0 0 1px $indigo, 0 0 0 0 transparent;
+      }
+    }
+
+    > input[type="radio"]:focus:disabled + span,
+    > input[type="radio"]:active:disabled + span {
+      &:before {
+        border-color: $gray-400;
+        box-shadow: 0 0 0 1px transparent, 0 1px 0 0 rgba(22,29,37,.05);
       }
     }
   }
