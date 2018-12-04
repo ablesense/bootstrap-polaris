@@ -213,29 +213,74 @@ select.form-control-lg {
 
 .quantity-selector {
   display: inline-flex;
+  z-index: 1;
 
   .btn, .form-control {
-    margin: 0 0.25rem;
+    margin: 0 0.5rem;
 
-    &:first-child {
-      margin-left: 0;
-    }
     &:last-child {
       margin-right: 0;
     }
   }
 
+  .btn {
+
+    &.quantity-selector__subtract,
+    &.quantity-selector__add {
+      display: none;
+
+      html.js & {
+        display: flex;
+      }
+
+      &:focus {
+        z-index: 20;
+      }
+
+      .polaris-icon__svg {
+        width: 1.2rem;
+        height: 1.2rem;
+        margin: auto;
+
+        path {
+          fill: $blue;
+        }
+      }
+    }
+
+    &.quantity-selector__subtract {
+      margin: 0;
+      margin-right: -1px;
+      // border-right-color: transparent;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    &.quantity-selector__add {
+      margin: 0;
+      margin-left: -1px;
+      // border-left-color: transparent;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+
   .form-control, .form-control[type="number"] {
     width: auto;
-    min-width: 6rem;
+    min-width: 5rem;
     text-align: center;
+    border-radius: 0;
+
+    &.quantity-selector__input {
+      margin: 0;
+      z-index: 10;
+    }
 
     html.js & {
       padding-right: 0.5rem;
       padding-left: 0.5rem;
       width: 5rem;
-      -moz-appearance: textfield;
       appearance: none;
+      -moz-appearance: textfield;
 
       &::-webkit-inner-spin-button, 
       &::-webkit-outer-spin-button {
