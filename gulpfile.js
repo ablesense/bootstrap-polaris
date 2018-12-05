@@ -6,7 +6,7 @@ var autoprefixer = require("gulp-autoprefixer");
 var concat = require("gulp-concat");
 
 var autoprefixerOptions = {
-  browsers: ["last 5 versions", "> 0.5%", "IE 9", "Firefox ESR"],
+  browsers: ["last 2 versions", "> 1%"],
   cascade: false
 };
 
