@@ -1,0 +1,32 @@
+.polaris-progress {
+  display: block;
+  max-width: 100%;
+  border-radius: 3px;
+  background-color: $gray-300;
+  overflow: hidden;
+}
+
+.polaris-progress__progress {
+  @include sr-only();
+}
+
+.polaris-progress__bar {
+  height: 1.6rem;
+  background-color: $teal;
+  animation: fillup .5s cubic-bezier(.64,0,.35,1);
+  transition: width .5s cubic-bezier(.64,0,.35,1);
+
+  &.polaris-progress__bar--small {
+    height: 0.8rem;
+  }
+
+  &.polaris-progress__bar--large {
+    height: 3.2rem;
+  }
+}
+
+@keyframes fillup {
+  0% {
+    width: 0
+  }
+}
