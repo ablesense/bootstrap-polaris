@@ -1,0 +1,59 @@
+.bulk-edit {
+  // display: table-row-group;
+  background-color: $white;
+}
+
+.bulk-edit__row-form {
+  border-bottom: solid 1px $gray-300;
+
+  &:first-child {
+    border-top: solid 1px $gray-300;
+  }
+}
+
+.bulk-edit__row {
+  display: table-row;
+
+  &:hover {
+    .bulk-edit__cell {
+      background-color: $gray-200;
+    }
+  }
+}
+
+.bulk-edit__row--header {
+  display: block;
+  border-top: solid 1px $gray-300;
+  border-bottom: solid 1px $gray-300;
+
+  .bulk-edit__cell {
+    color: $gray-600;
+  }
+}
+
+.bulk-edit__cell {
+  display: table-cell;
+  min-width: 300px;
+  margin-bottom: -1px;
+  border-right: 1px solid $gray-300;
+  background-color: $white;
+  vertical-align: top;
+  z-index: 1;
+
+  .form-control {
+    height: 3.6rem;
+    margin: 0;
+    border-color: transparent;
+    border-radius: 0;
+    z-index: 1;
+
+    &:focus {
+      z-index: 150;
+    }
+  }
+}
+
+.bulk-edit__cell--title {
+  padding: 0.6rem 1rem;
+  background-color: $gray-200;
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!--[if IE 9]> <html class="ie9 no-js" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bootstrap Polaris</title>
+  <link rel="stylesheet" href="bootstrap-polaris.min.css">
+  <script type="text/javascript">
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js') + (document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#BasicStructure", "1.1") ? ' svg' : ' no-svg');
+  </script>
+</head>
+<body>
+  <main class="container-fluid">
+    <header class="page-header">
+      <div class="page-header__content">
+        <h1 class="display-2">Bulk Edit</h1>
+      </div>
+      <div class="page-header__actions">
+        <a href="#" class="btn btn-link-gray">
+            <svg class="polaris-icon__svg" viewBox="0 0 20 20"><path d="M9.293 13.707l-3-3a.999.999 0 1 1 1.414-1.414L9 10.586V3a1 1 0 1 1 2 0v7.586l1.293-1.293a.999.999 0 1 1 1.414 1.414l-3 3a.999.999 0 0 1-1.414 0zM17 16a1 1 0 1 1 0 2H3a1 1 0 1 1 0-2h14z"></path></svg>
+          Export
+        </a>
+      </div>
+    </header>
+
+    <div class="card">
+      <div class="card-body">
+        <h3>Edit Products</h3>
+      </div>
+
+      <div class="table-responsive-wrapper">
+        <div class="bulk-edit">
+          <div class="bulk-edit__row bulk-edit__row--header">
+            <div class="bulk-edit__cell bulk-edit__cell--string bulk-edit__cell--title">Title</div>
+            <div class="bulk-edit__cell bulk-edit__cell--string bulk-edit__cell--title">Variant</div>
+            <div class="bulk-edit__cell bulk-edit__cell--string bulk-edit__cell--title">Start Date</div>
+            <div class="bulk-edit__cell bulk-edit__cell--string bulk-edit__cell--title">End Date</div>
+          </div>
+          <form class="bulk-edit__row-form">
+            <div class="bulk-edit__row">
+              <div class="bulk-edit__cell bulk-edit__cell--string bulk-edit__cell--title">Blue Silk Tuxedo</div>
+              <div class="bulk-edit__cell bulk-edit__cell--string">
+                <input type="text" name="variant" id="variant" class="form-control" value="sm">
+              </div>
+              <div class="bulk-edit__cell bulk-edit__cell--string">
+                <input type="date" name="start_date" id="start_date" class="form-control" value="">
+              </div>
+              <div class="bulk-edit__cell bulk-edit__cell--string">
+                <input type="date" name="end_date" id="end_date" class="form-control" value="">
+              </div>
+            </div>
+          </form>
+          <form class="bulk-edit__row-form">
+            <div class="bulk-edit__row">
+              <div class="bulk-edit__cell bulk-edit__cell--string bulk-edit__cell--title">Blue Silk Tuxedo</div>
+              <div class="bulk-edit__cell bulk-edit__cell--string">
+                <input type="text" name="variant" id="variant" class="form-control" value="sm">
+              </div>
+              <div class="bulk-edit__cell bulk-edit__cell--string">
+                <input type="date" name="start_date" id="start_date" class="form-control" value="">
+              </div>
+              <div class="bulk-edit__cell bulk-edit__cell--string">
+                <input type="date" name="end_date" id="end_date" class="form-control" value="">
+              </div>
+            </div>
+          </form>
+          <form class="bulk-edit__row-form">
+            <div class="bulk-edit__row">
+              <div class="bulk-edit__cell bulk-edit__cell--string bulk-edit__cell--title">Blue Silk Tuxedo</div>
+              <div class="bulk-edit__cell bulk-edit__cell--string">
+                <input type="text" name="variant" id="variant" class="form-control" value="sm">
+              </div>
+              <div class="bulk-edit__cell bulk-edit__cell--string">
+                <input type="date" name="start_date" id="start_date" class="form-control" value="">
+              </div>
+              <div class="bulk-edit__cell bulk-edit__cell--string">
+                <input type="date" name="end_date" id="end_date" class="form-control" value="">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="card-body">
+        <nav>
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="btn" href="#">
+                <span class="polaris-icon">
+                  <svg class="polaris-icon__svg" viewBox="0 0 20 20">
+                    <path d="M17 9H5.414l3.293-3.293a.999.999 0 1 0-1.414-1.414l-5 5a.999.999 0 0 0 0 1.414l5 5a.997.997 0 0 0 1.414 0 .999.999 0 0 0 0-1.414L5.414 11H17a1 1 0 1 0 0-2"
+                      fill-rule="evenodd"></path>
+                  </svg>
+                </span>
+                <span class="sr-only">Previous</span>
+              </a>
+            </li>
+            <li class="page-item">
+              <a class="btn" href="#">
+                <span class="polaris-icon">
+                  <svg class="polaris-icon__svg" viewBox="0 0 20 20">
+                    <path d="M17.707 9.293l-5-5a.999.999 0 1 0-1.414 1.414L14.586 9H3a1 1 0 1 0 0 2h11.586l-3.293 3.293a.999.999 0 1 0 1.414 1.414l5-5a.999.999 0 0 0 0-1.414"
+                      fill-rule="evenodd"></path>
+                  </svg>
+                </span>
+                <span class="sr-only">Next</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+    </div>
+
+    <div class="footer-help">
+      <div class="footer-help__content">
+        <div class="footer-help__icon">
+          <span class="polaris-icon polaris-icon__has-backdrop">
+            <svg class="polaris-icon__svg" viewBox="0 0 20 20">
+              <circle cx="10" cy="10" r="9" fill="currentColor"></circle>
+              <path d="M10 0C4.486 0 0 4.486 0 10s4.486 10 10 10 10-4.486 10-10S15.514 0 10 0m0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8m0-4a1 1 0 1 0 0 2 1 1 0 1 0 0-2m0-10C8.346 4 7 5.346 7 7a1 1 0 1 0 2 0 1.001 1.001 0 1 1 1.591.808C9.58 8.548 9 9.616 9 10.737V11a1 1 0 1 0 2 0v-.263c0-.653.484-1.105.773-1.317A3.013 3.013 0 0 0 13 7c0-1.654-1.346-3-3-3"></path>
+            </svg>
+          </span>
+        </div>
+        <p>Learn more about
+          <a class="Polaris-Link" href="#" data-polaris-unstyled="true">fufilling orders</a>.</p>
+      </div>
+    </div>
+
+  </main>
+</body>
+</html>
