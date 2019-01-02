@@ -1,5 +1,4 @@
 .bulk-edit {
-  // display: table-row-group;
   background-color: $white;
 }
 
@@ -13,24 +12,15 @@
 }
 
 .bulk-edit__row {
-  // display: table-row;
   display: flex;
   z-index: 1;
-
-  // &:hover {
-  //   .bulk-edit__cell {
-  //     background-color: $gray-200;
-  //   }
-  // }
 }
 
 .bulk-edit__row--header {
-  // display: block;
   border-top: solid 1px $gray-300;
   border-bottom: solid 1px $gray-300;
 
   .bulk-edit__cell {
-    // border-top: solid 1px $gray-300;
     border-right: 1px solid $gray-300;
     border-bottom: solid 1px $gray-300;
     color: $gray-600;
@@ -39,6 +29,8 @@
 
 .bulk-edit__cell {
   // display: table-cell;
+  flex-basis: 300px;
+  max-width: 300px;
   min-width: 300px;
   margin-top: -1px;
   margin-bottom: -1px;
@@ -47,17 +39,35 @@
   border-bottom: solid 1px $gray-300;
   background-color: $white;
   vertical-align: top;
+  font-size: 1.4rem;
   z-index: 2;
+
+  &.bulk-edit__cell--string {
+    flex-basis: 300px;
+    max-width: 300px;
+    min-width: 300px;
+  }
+  &.bulk-edit__cell--number {
+    flex-basis: 140px;
+    max-width: 140px;
+    min-width: 140px;
+    text-align: right;
+
+    .form-control {
+      text-align: right;
+    }
+  }
 
   .bulk-edit__row:not(.bulk-edit__row--header):hover & {
     background-color: color(indigo, lighter);
   }
 
   .form-control {
-    height: 3.6rem;
+    height: 3.4rem;
     margin: 0;
     border-color: rgba(255,255,255,0);
     border-radius: 0;
+    font-size: 1.4rem;
     z-index: 3;
 
     &:focus,
@@ -70,6 +80,12 @@
       background-color: color(indigo, lighter);
       border-color: $gray-200;
     }
+  }
+
+  .polaris-check {
+    margin: 0;
+    padding: 0.6rem 1rem;
+    font-size: 1.4rem;
   }
 }
 

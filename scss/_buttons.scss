@@ -19,6 +19,7 @@
   color: $gray-900;
   fill: $gray-600;
   border: 1px solid $gray-400;
+  z-index: 1;
   @include gradient-y($white, $gray-100);
   @include button-size($btn-height, $input-btn-padding-y, $input-btn-padding-x, $btn-font-size, $input-btn-line-height, $btn-border-radius);
   @include transition($btn-transition);
@@ -40,12 +41,18 @@
     border-color: $indigo;
     box-shadow: $btn-focus-box-shadow;
     color: $gray-900;
+    // z-index: 2;
   }
 
   &:active,
   &.active {
     background-image: none;
     box-shadow: $btn-focus-box-shadow, $btn-active-box-shadow;
+
+    &:focus,
+    &.focus {
+      box-shadow: $btn-focus-box-shadow;
+    }
   }
 
   // Disabled comes first so active can properly restyle
