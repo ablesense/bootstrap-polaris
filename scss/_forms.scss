@@ -24,6 +24,11 @@
   border: $input-btn-border-width solid $input-border-color;
   border-radius: $input-border-radius;
 
+  &.form-control--error {
+    background-color: color(red, lighter);
+    border-color: color(red, dark);
+  }
+
   @include media-breakpoint-up(sm) {
     font-size: $font-size-base;
   }

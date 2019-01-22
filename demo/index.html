@@ -329,8 +329,7 @@
               <input type="email" id="email" class="form-control" name="email">
               <label for="password">Password</label>
               <input type="password" id="password" class="form-control" name="password" aria-describedby="passwordHelpBlock">
-              <small id="passwordHelpBlock" class="form-text polaris-caption">Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special
-                characters, or emoji.</small>
+              <small id="passwordHelpBlock" class="polaris-caption">Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.</small>
               <label for="number">Number</label>
               <input type="number" id="number" class="form-control" name="number">
               <label for="search">Search</label>
@@ -347,7 +346,24 @@
                 <option value="3">Three</option>
                 <option value="4">Four</option>
               </select>
-              <small id="selectHelp" class="form-text polaris-caption">Please select one option</small>
+              <small id="selectHelp" class="polaris-caption">Please select one option</small>
+            </div>
+
+            <div class="card-body">
+              <h3>Modifiers</h3>
+
+              <label for="error-example">Password</label>
+              <input type="password" id="error-example" class="form-control form-control--error" name="password" placeholder="Password" aria-describedby="passwordError">
+              <small id="passwordError" class="polaris-caption polaris-caption--error">Incorrect password</small>
+
+              <label for="select-error">Select</label>
+              <select name="select-error" id="select-error" class="form-control form-control--error" aria-describedby="select-error-caption">
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+              </select>
+              <small id="select-error-caption" class="polaris-caption polaris-caption--error">Invalid Selection</small>
             </form>
           </div>
         </div>
