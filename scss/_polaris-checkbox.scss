@@ -39,7 +39,7 @@ $check-svg: '%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width
         height: 1.6rem;
         margin-right: 0.8rem;
         background-color: $white;
-        background-image: url("data:image/svg+xml;utf8,#{$check-svg}"), linear-gradient(180deg,$white,$gray-100);
+        background-image: url("data:image/svg+xml;charset=utf8,#{$check-svg}"), linear-gradient(180deg,$white,$gray-100);
         background-repeat: no-repeat, no-repeat;
         background-position: center, center;
         background-size: 0.5px 0.5px, 100%;
