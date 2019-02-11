@@ -1,4 +1,4 @@
-$radio-svg: "%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Ccircle%20cx%3D%2210%22%20cy%3D%2210%22%20r%3D%225%22%20fill%3D%22%235c6ac4%22%20%2F%3E%3C%2Fsvg%3E";
+$radio-svg: "%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Ccircle cx='10' cy='10' r='5' fill='%235c6ac4' /%3E%3C/svg%3E";
 
 .polaris-radio {
   position: relative;
@@ -39,7 +39,7 @@ $radio-svg: "%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width
         height: 1.6rem;
         margin-right: 0.8rem;
         background-color: $white;
-        background-image: url("data:image/svg+xml;utf8,#{$radio-svg}"), linear-gradient(180deg,$white,$gray-100);
+        background-image: url("data:image/svg+xml;charset=utf8,#{$radio-svg}"), linear-gradient(180deg,$white,$gray-100);
         background-repeat: no-repeat, no-repeat;
         background-position: center, center;
         background-size: 0.5px 0.5px, 100%;
