@@ -14,6 +14,11 @@
     color: color(red, dark);
   }
 
+  &.polaris-caption--indent {
+    margin: 0 0 0.4rem;
+    padding-left: 2.4rem;
+  }
+
   @include media-breakpoint-up(sm) {
     font-size: 1.4rem;
     line-height: 1.6rem;
