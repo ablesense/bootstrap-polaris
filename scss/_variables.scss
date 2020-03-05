@@ -816,6 +816,14 @@ $alert-link-font-weight:      $font-weight-bold !default;
 $alert-border-width:          $border-width !default;
 
 
+// Toasts
+//
+// Define toast text color, border radius and background.
+$toast-color:                 $white !default;
+$toast-border-radius:         $border-radius !default;
+$toast-bg:                    rgba(0, 0, 0, 0.88) !default; ;
+
+
 // Progress bars
 
 $progress-height:               1rem !default;
