@@ -4,7 +4,7 @@
   right: 0;
   left: 0;
   text-align: center;
-  bottom: var(--global-ribbon-height, 0);
+  bottom: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,10 +17,10 @@
   display: inline-flex;
   max-width: 50rem;
   padding: 0.8rem 1.6rem;
-  border-radius: var(--p-border-radius-wide, 3px);
-  background: var(--p-surface, rgba(0, 0, 0, 0.88));
-  box-shadow: var(--p-override-none, 0 0 0 1px rgba(63, 63, 68, 0.05), 0 1px 3px 0 rgba(63, 63, 68, 0.15));
-  color: var(--p-text, white);
+  border-radius: $toast-border-radius;
+  background: $gray-700;
+  box-shadow: 0 0 0 1px rgba(63, 63, 68, 0.05), 0 1px 3px 0 rgba(63, 63, 68, 0.15);
+  color: $toast-color;
   margin-bottom: 2rem;
 
   transition: transform 0.5s;
@@ -39,7 +39,7 @@
     -moz-appearance: none;
     appearance: none;
     background: transparent;
-    fill: var(--p-text, white);
+    fill: $toast-color;
     cursor: pointer;
     outline: none;
   }

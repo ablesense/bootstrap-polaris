@@ -23,4 +23,24 @@
       input.value = (+input.value > min) ? input.value - 1 : min;
     });
   });
+
+  document.getElementById('toastButton').addEventListener('click', function(e) {
+    var showText = "Show Toast"
+    var hideText = "Hide Toast"
+
+    var toast = document.getElementById('sampleToast');
+    
+    if (e.target.innerHTML == showText) {
+      e.target.innerHTML = hideText;
+      toast.classList.add('show');
+    } else {
+      e.target.innerHTML = showText;
+      toast.classList.remove('show');
+    }
+  });
+
+  document.querySelector('#sampleToast button').addEventListener('click', function(e) {
+    document.getElementById('toastButton').click();
+  });
+
 })();
