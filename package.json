@@ -8,10 +8,10 @@
     "css_name": "bootstrap-polaris.min.css"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
     "gulp-concat": "^2.6.1",
-    "gulp-sass": "^4.0.1",
-    "gulp-sourcemaps": "^2.6.4"
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0"
   }
 }
